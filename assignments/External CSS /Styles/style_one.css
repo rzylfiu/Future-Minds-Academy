@@ -1,0 +1,19 @@
+h1{
+    background-color: cornflowerblue;
+    color: blue;
+    font-size: 25px;
+    padding: 10px;
+    
+}
+h2{
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    padding: 8px;
+}
+p{
+    background-color: aqua;
+    color: darkblue;
+    width: 300px;
+}
+
