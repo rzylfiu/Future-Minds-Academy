@@ -1,20 +1,28 @@
-html {
-    cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="64" width="30"><text y="28" font-size="32">🚀</text><path d="M0,2 L0,0 L2,0" fill="red" /></svg>'), auto;
+* {
+    cursor: url(images/cursor.png), auto;
+
+
 }
 
 
 body {
-    background-image: url(images/rainbackground.jpeg);
+    background-image: url(images/background.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     padding: 50px;
 }
 
+hr {
+    color: rgb(70, 229, 213);
+}
+
 h1 {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
@@ -26,6 +34,8 @@ h1 {
 
 }
 
+
+
 .li0 {
     display: inline;
     list-style-type: none;
@@ -35,15 +45,18 @@ h1 {
 .myPage {
 
     display: inline;
-    background-color: rgb(50, 50, 243);
+    background-color: rgb(29, 97, 148);
     color: white;
     border-radius: 20px;
     padding: 1rem;
 
 }
 
+
+
 .myPage:hover {
-    background-color: rgb(4, 4, 134);
+    background-color: rgb(14, 28, 64);
+
 }
 
 
@@ -61,7 +74,19 @@ img {
 h2 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 
+}
+
+.girlicon {
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.girlicon:hover {
+    border-radius: 0px;
+
+    transition: 1s;
 }
 
 article,
@@ -72,34 +97,37 @@ footer {
 }
 
 .article1 {
-    background-color: rgb(237, 237, 130);
+    background-color: rgba(130, 237, 237, 0.661);
     text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 
 .article1:hover {
-    background-color: yellow;
+    background-color: rgba(84, 166, 166, 0.962);
 
     border: 3px solid #000000
 }
 
 .article2 {
-    background-color: rgb(214, 112, 112);
+    background-color: rgba(0, 0, 0, 0.497);
 
 }
 
 .article2:hover {
-    background-color: #c62f2f;
+    background-color: #000000;
     border: 3px solid #000000
 }
 
 h2 {
     text-align: center;
+    font-size: 25px;
 }
 
 .ul2 {
     list-style-type: none;
-    padding-top: 5px;
+    padding: 10px;
 
 
 }
@@ -110,75 +138,97 @@ li {
 }
 
 .li1 {
-    background-color: antiquewhite;
+    background-color: rgba(255, 255, 255, 0.532);
     border-radius: 15px;
+
 
 
 }
 
 .li1:hover {
-    background-color: rgb(225, 194, 155);
+    background-color: white;
     border-radius: 10px;
 }
 
 h4 {
-    padding: 10px;
-    color: rgb(145, 144, 144);
+    padding: 2px;
+    color: rgb(81, 79, 79);
+    font-size: 22px;
+    text-align: center;
 
+
+}
+
+.education {
+    font-size: 18px;
+    padding-top: 1px;
+    list-style: square;
 }
 
 .article3 {
-    background-color: rgb(118, 234, 124);
-
-
+    background-color: rgba(0, 198, 233, 0.707);
 
 }
 
+table,
+th,
+tr,
+td {
+    border: 2px solid;
+    border-collapse: collapse;
+    text-align: center;
+    width: auto;
+}
+
 .article3:hover {
-    background-color: rgb(68, 219, 71);
+    background-color: rgba(0, 198, 233, 0.868);
     border: 3px solid #000000
 }
 
 
 
 th {
-    background-color: rgb(41, 226, 41);
+    background-color: rgb(0, 151, 177);
 }
 
 
 .article4 {
-    background-color: pink;
+    background-color: rgba(251, 251, 251, 0.654);
 
 
 }
 
 .article4:hover {
-    background-color: palevioletred;
+    background-color: rgb(152, 152, 152);
     border: 3px solid #000000
 }
 
 .a2 {
-    background-color: #e16060;
-    padding: 1px;
+    background-color: #0000006e;
+    padding: 2px 3px;
     border-radius: 3px;
     color: white;
-    margin: 3px;
+    margin: 4px;
+    font-size: 15px;
 
 }
 
 .a2:hover {
-    background-color: #d82b2b;
-    width: 40px;
+    background-color: #000000;
+    font-size: 18px;
+
 }
 
 .li4 {
     margin: 10px;
-   
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 
 .project1 {
-    background-color: rgb(237, 102, 124);
+    background-color: rgba(105, 245, 252, 0.542);
     text-align: center;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -188,7 +238,7 @@ th {
 
 .project1:hover {
     border-radius: 50px;
-    background-color: rgb(246, 30, 66);
+    background-color: rgba(105, 245, 252, 0.791);
     transition: 1s;
 }
 
@@ -200,7 +250,7 @@ th {
 
 
 .project2 {
-    background-color: rgb(107, 194, 244);
+    background-color: rgba(0, 0, 0, 0.428);
     color: beige;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
@@ -210,13 +260,13 @@ th {
 
 .project2:hover {
     border-radius: 50px;
-    background-color: rgb(39, 165, 249);
+    background-color: rgba(0, 0, 0, 0.732);
     transition: 1s;
 }
 
 
 .project3 {
-    background-color: rgb(93, 233, 144);
+    background-color: rgba(105, 245, 252, 0.542);
     color: beige;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
@@ -226,7 +276,7 @@ th {
 
 .project3:hover {
     border-radius: 50px;
-    background-color: rgb(0, 207, 83);
+    background-color: rgba(105, 245, 252, 0.791);
     transition: 1s;
 }
 
@@ -234,45 +284,65 @@ th {
     background-color: rgba(0, 0, 0, 0.556);
     padding: 20px;
     color: white;
+    text-align: center;
+    margin: 30px;
 }
+
 
 .form1:hover {
     border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.701);
 
 }
 
-.fa {
-    padding: 30px;
-    font-size: 90px;
-    width: 30px;
+.connect {
     text-align: center;
-    text-decoration: none;
-    margin: 10px 3px;
-    border-radius: 50px;
+    background-color: rgba(249, 242, 242, 0.674);
+    width: auto;
+
+
+}
+
+
+
+figure {
+    display: inline;
+    width: 20px;
     height: 20px;
 
 }
 
-.fa:hover {
-    opacity: 0.5;
+.email {
+    width: 250px;
+    height: 45px;
+    border-radius: 45px;
+    text-align: center;
+    margin-bottom: 25px;
+
 }
 
-.fa-facebook {
-    background: #3B5998;
-    color: white;
+textarea {
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    margin-bottom: 25px;
+}
+
+.submit {
+    width: 200px;
+    height: 45px;
+    background-color: rgb(140, 217, 253);
+    border: none;
+    outline: none;
+    border-radius: 45px;
+
 
 }
 
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-}
+.submit:hover {
+    background-color: rgb(56, 182, 241);
 
-.fa-instagram {
-    background: #88124d;
-    color: white;
 }
-
 
 footer {
     background-color: rgb(49, 49, 49);
