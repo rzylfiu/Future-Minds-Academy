@@ -1,0 +1,19 @@
+body{
+    background-image: url(images/sidebar-2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1{
+    color: blue;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.195);
+}
+
+article{
+    background-color: rgb(170, 219, 254);
+    color: blue;
+}

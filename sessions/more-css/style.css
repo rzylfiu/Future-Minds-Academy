@@ -1,0 +1,103 @@
+body,
+ul {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+nav {
+    background-color: rgb(95, 95, 95);
+    padding: 20px;
+    box-shadow: 0px 3px 7 px 5px #848484;
+
+
+}
+
+li {
+    float: left;
+    list-style-type: none;
+    margin-right: 10px;
+
+}
+
+li a {
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: rgb(130, 130, 130);
+    color: white;
+    border-radius: 5px;
+    transition: 1s;
+
+
+}
+
+li a:hover {
+    background-color: black;
+    transition: 1s;
+}
+
+nav ul {
+    width: 480px;
+    margin: 0px auto;
+}
+
+.activePage {
+    background-color: black;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.p30 {
+    padding: 30px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.pt40 {
+    padding-top: 40px;
+}
+
+main {
+    width: 1150px;
+    margin: 20px auto;
+}
+
+.fig1 {
+    float: left;
+
+}
+
+h4 {
+    color: red;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+p {
+    color: grey;
+}
+
+.fig2 {
+    float: right;
+}
+
+img{
+    transition: 1s;
+}
+
+img:hover {
+ border-radius: 50%;
+ transition: 1s;
+}

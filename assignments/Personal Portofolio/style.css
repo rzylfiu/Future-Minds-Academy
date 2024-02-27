@@ -1,0 +1,283 @@
+html {
+    cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="64" width="30"><text y="28" font-size="32">🚀</text><path d="M0,2 L0,0 L2,0" fill="red" /></svg>'), auto;
+}
+
+
+body {
+    background-image: url(images/rainbackground.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.pages {
+    padding: 30px;
+    list-style-type: none;
+    text-align: center;
+
+
+}
+
+.li0 {
+    display: inline;
+    list-style-type: none;
+}
+
+
+.myPage {
+
+    display: inline;
+    background-color: rgb(50, 50, 243);
+    color: white;
+    border-radius: 20px;
+    padding: 1rem;
+
+}
+
+.myPage:hover {
+    background-color: rgb(4, 4, 134);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+img {
+    text-align: center;
+    width: 200px;
+    height: 210px;
+}
+
+
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+article,
+footer {
+    margin: 15px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.article1 {
+    background-color: rgb(237, 237, 130);
+    text-align: center;
+
+}
+
+.article1:hover {
+    background-color: yellow;
+
+    border: 3px solid #000000
+}
+
+.article2 {
+    background-color: rgb(214, 112, 112);
+
+}
+
+.article2:hover {
+    background-color: #c62f2f;
+    border: 3px solid #000000
+}
+
+h2 {
+    text-align: center;
+}
+
+.ul2 {
+    list-style-type: none;
+    padding-top: 5px;
+
+
+}
+
+li {
+    margin: 10px;
+    padding: 5px;
+}
+
+.li1 {
+    background-color: antiquewhite;
+    border-radius: 15px;
+
+
+}
+
+.li1:hover {
+    background-color: rgb(225, 194, 155);
+    border-radius: 10px;
+}
+
+h4 {
+    padding: 10px;
+    color: rgb(145, 144, 144);
+
+}
+
+.article3 {
+    background-color: rgb(118, 234, 124);
+
+
+
+}
+
+.article3:hover {
+    background-color: rgb(68, 219, 71);
+    border: 3px solid #000000
+}
+
+
+
+th {
+    background-color: rgb(41, 226, 41);
+}
+
+
+.article4 {
+    background-color: pink;
+
+
+}
+
+.article4:hover {
+    background-color: palevioletred;
+    border: 3px solid #000000
+}
+
+.a2 {
+    background-color: #e16060;
+    padding: 1px;
+    border-radius: 3px;
+    color: white;
+    margin: 3px;
+
+}
+
+.a2:hover {
+    background-color: #d82b2b;
+    width: 40px;
+}
+
+.li4 {
+    margin: 10px;
+   
+}
+
+
+.project1 {
+    background-color: rgb(237, 102, 124);
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.project1:hover {
+    border-radius: 50px;
+    background-color: rgb(246, 30, 66);
+    transition: 1s;
+}
+
+.imgpro {
+    width: auto;
+    position: relative;
+}
+
+
+
+.project2 {
+    background-color: rgb(107, 194, 244);
+    color: beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.project2:hover {
+    border-radius: 50px;
+    background-color: rgb(39, 165, 249);
+    transition: 1s;
+}
+
+
+.project3 {
+    background-color: rgb(93, 233, 144);
+    color: beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.project3:hover {
+    border-radius: 50px;
+    background-color: rgb(0, 207, 83);
+    transition: 1s;
+}
+
+.form1 {
+    background-color: rgba(0, 0, 0, 0.556);
+    padding: 20px;
+    color: white;
+}
+
+.form1:hover {
+    border-radius: 20px;
+
+}
+
+.fa {
+    padding: 30px;
+    font-size: 90px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 3px;
+    border-radius: 50px;
+    height: 20px;
+
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #88124d;
+    color: white;
+}
+
+
+footer {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    text-align: center;
+
+
+}
