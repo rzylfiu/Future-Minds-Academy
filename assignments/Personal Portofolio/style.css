@@ -1,5 +1,5 @@
 * {
-    cursor: url(images/cursor.png), auto;
+    cursor: url(images/cursoor.png), auto;
 
 
 }
@@ -21,8 +21,17 @@ h1 {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-    color: white;
+    color: transparent;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(images/backgroundimg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    text-transform: uppercase;
+    
+
 
 }
 
@@ -45,10 +54,19 @@ h1 {
 .myPage {
 
     display: inline;
-    background-color: rgb(29, 97, 148);
+    background-color: rgb(18, 74, 116);
     color: white;
     border-radius: 20px;
     padding: 1rem;
+    text-transform: uppercase;
+    width: 40px;
+    letter-spacing: -1px;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to right, black 50%, rgb(30, 148, 171) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    
 
 }
 
@@ -56,6 +74,8 @@ h1 {
 
 .myPage:hover {
     background-color: rgb(14, 28, 64);
+    background-position: left bottom;
+border-radius: 1;
 
 }
 
@@ -64,7 +84,7 @@ a {
     text-decoration: none;
 }
 
-img {
+.imgpro {
     text-align: center;
     width: 200px;
     height: 210px;
@@ -81,11 +101,11 @@ h2 {
 .girlicon {
     border-radius: 50%;
     transition: 1s;
+    width: 200px;
 }
 
 .girlicon:hover {
     border-radius: 0px;
-
     transition: 1s;
 }
 
@@ -127,19 +147,22 @@ h2 {
 
 .ul2 {
     list-style-type: none;
-    padding: 10px;
+    padding: 5px;
 
 
 }
 
 li {
-    margin: 10px;
-    padding: 5px;
+    margin-top: -2px;
+    padding-top: -2px;
+   
 }
+
 
 .li1 {
     background-color: rgba(255, 255, 255, 0.532);
     border-radius: 15px;
+    margin-top: -2px;
 
 
 
@@ -161,8 +184,10 @@ h4 {
 
 .education {
     font-size: 18px;
-    padding-top: 1px;
+   
     list-style: square;
+    margin-top: -2px;
+    
 }
 
 .article3 {
@@ -227,6 +252,7 @@ th {
 }
 
 
+
 .project1 {
     background-color: rgba(105, 245, 252, 0.542);
     text-align: center;
@@ -234,12 +260,17 @@ th {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     padding: 30px;
+    transition: 1s;
+    margin: 20px;
+
 }
 
 .project1:hover {
     border-radius: 50px;
     background-color: rgba(105, 245, 252, 0.791);
     transition: 1s;
+    border: 3px solid black;
+  
 }
 
 .imgpro {
@@ -256,12 +287,15 @@ th {
     font-size: 20px;
     padding: 30px;
     text-align: center;
+    transition: 1s;
+    margin: 20px;
 }
 
 .project2:hover {
     border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.732);
     transition: 1s;
+    border: 3px solid black;
 }
 
 
@@ -272,12 +306,15 @@ th {
     font-size: 20px;
     padding: 30px;
     text-align: center;
+    transition: 1s;
+    margin: 20px;
 }
 
 .project3:hover {
     border-radius: 50px;
     background-color: rgba(105, 245, 252, 0.791);
     transition: 1s;
+    border: 3px solid black;
 }
 
 .form1 {
@@ -296,21 +333,17 @@ th {
 }
 
 .connect {
+
+    background-color: rgba(249, 242, 242, 0.46);
     text-align: center;
-    background-color: rgba(249, 242, 242, 0.674);
-    width: auto;
+    margin-left: 200px;
+    margin-right: 200px;
 
 
 }
 
 
 
-figure {
-    display: inline;
-    width: 20px;
-    height: 20px;
-
-}
 
 .email {
     width: 250px;
@@ -343,6 +376,16 @@ textarea {
     background-color: rgb(56, 182, 241);
 
 }
+
+
+.socialmedia {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+
+}
+
+
 
 footer {
     background-color: rgb(49, 49, 49);
