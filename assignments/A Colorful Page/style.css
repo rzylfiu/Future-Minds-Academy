@@ -9,12 +9,9 @@ ul {
     background-color: rgba(0, 0, 0, 0.446);
 }
 
-h1{
-    color: blue;
-}
 
 
-article{
-    background-color: rgb(170, 219, 254);
+article, h1{
+    background-image: url(images/sidebar-1.jpg);
     color: blue;
 }
