@@ -1,16 +1,22 @@
-p{
-    width: 50%;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
- 
-}
-
-.section1::first-letter {
-    initial-letter: 3;
-    border-bottom: 3px solid red;
-   padding-bottom:4px ;
+p {
+  width: 50%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: gray;
 }
 
 
-.firstword{
-    text-transform: uppercase;
+.firstletter {
+  initial-letter: 3;
+  font-size: 100px;
+  line-height: 70px;
+  border-bottom: 3px solid red;
+
+
+}
+
+
+
+.firstword {
+  text-transform: uppercase;
+  font-weight: bold;
 }
