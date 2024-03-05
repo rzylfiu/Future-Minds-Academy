@@ -1,0 +1,20 @@
+h1 { text-align: center;
+    color: rgb(193, 6, 37);
+    
+}
+
+.article1{
+    background-color: pink;
+    color: hotpink;
+    text-align: center;
+    width: 50%;
+    border: 3px solid rgb(162, 1, 28);
+}
+
+.article1:hover{
+    background-color: rgb(195, 10, 41);
+}
+
+.article1::first-letter{
+    initial-letter: 3;
+}

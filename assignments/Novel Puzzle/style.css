@@ -1,8 +1,16 @@
-p::first-letter{
-    font-size: 20rem;
-    border-bottom-style:red ;
+p{
+    width: 50%;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+ 
 }
 
-p::first-line{
-    
+.section1::first-letter {
+    initial-letter: 3;
+    border-bottom: 3px solid red;
+   padding-bottom:4px ;
+}
+
+
+.firstword{
+    text-transform: uppercase;
 }

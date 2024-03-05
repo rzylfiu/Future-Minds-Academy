@@ -1,0 +1,29 @@
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+ 
+  
+  .logo{
+    flex: 1;
+    padding: 5px;
+    border: 1px solid black;
+  }
+
+  .dashboard {
+    flex: 4;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: antiquewhite;
+  }

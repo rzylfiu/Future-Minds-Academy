@@ -5,13 +5,14 @@ body{
     background-size: cover;
 }
 
+ul {
+    background-color: rgba(0, 0, 0, 0.446);
+}
+
 h1{
     color: blue;
 }
 
-nav {
-    background-color: rgba(0, 0, 0, 0.195);
-}
 
 article{
     background-color: rgb(170, 219, 254);
