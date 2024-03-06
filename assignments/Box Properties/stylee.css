@@ -1,0 +1,28 @@
+article {
+    border: 3px solid black;
+    padding: auto;
+    width: 100%;
+    background-color: rgb(236, 158, 56);
+    line-height: 25px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+    float: left;
+    width: 250px;
+    height: 200px;
+    border: 3px solid black;
+    margin: -5px 10px 5px -28px;
+    padding: 0px;
+    cursor: pointer;
+
+}
+
+img:hover {
+    width: 270px;
+    height: 220px;
+    border: 3px dashed red;
+    margin: 0 15px 10px -30px;
+    padding: 8px;
+}
