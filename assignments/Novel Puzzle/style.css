@@ -1,8 +1,12 @@
 p {
-  width: 50%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: gray;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 14pt;
+  line-height: 20px;
+  margin: 0 auto;
+  
 }
+
 
 
 .firstletter {
