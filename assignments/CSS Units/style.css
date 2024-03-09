@@ -8,8 +8,8 @@ hr {
     width: 33%;
     border: none;
     height: 2px;
-    margin:5x;
-    
+    margin: 5x;
+
 }
 
 
@@ -17,7 +17,7 @@ article {
     border: 0.5px solid black;
     height: 25vh;
     font-size: 1em;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 20px;
     padding: 5px;
 
@@ -30,4 +30,5 @@ article:nth-child(odd) {
 
 article:nth-child(even) {
     background: rgb(203, 194, 173);
+    color: black;
 }
