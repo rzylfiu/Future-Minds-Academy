@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+
+}
+
+hr {
+    background-color: rgb(207, 18, 18);
+    width: 33%;
+    border: none;
+    height: 2px;
+    margin:5x;
+    
+}
+
+
+article {
+    border: 0.5px solid black;
+    height: 25vh;
+    font-size: 1em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 20px;
+    padding: 5px;
+
+}
+
+article:nth-child(odd) {
+    background: rgb(87, 87, 87);
+    color: white;
+}
+
+article:nth-child(even) {
+    background: rgb(203, 194, 173);
+}
