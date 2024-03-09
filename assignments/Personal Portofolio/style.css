@@ -1,9 +1,7 @@
 * {
     cursor: url(images/butterfly.png), auto;
 
-
 }
-
 
 body {
     background-image: url(images/background.jpeg);
@@ -11,11 +9,9 @@ body {
     background-attachment: fixed;
     background-size: cover;
     padding: 50px;
+
 }
 
-hr {
-    color: rgb(70, 229, 213);
-}
 
 h1 {
     text-align: center;
@@ -34,20 +30,22 @@ h1 {
     list-style-type: none;
     text-align: center;
 
-
 }
 
+a {
+    text-decoration: none;
+}
 
-.li0 {
+.listofPages {
     display: inline;
     list-style-type: none;
+    padding: 5px;
 
 }
 
 
 .myPage {
 
-    display: inline;
     background-color: rgb(18, 74, 116);
     color: white;
     border-radius: 20px;
@@ -62,9 +60,7 @@ h1 {
     transition: all .5s ease-out;
 
 
-
 }
-
 
 
 .myPage:hover {
@@ -74,10 +70,13 @@ h1 {
 
 }
 
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
 
-a {
-    text-decoration: none;
 }
+
 
 .imgpro {
     text-align: center;
@@ -86,12 +85,7 @@ a {
 }
 
 
-h2 {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
 
-}
 
 .girlicon {
     border-radius: 50%;
@@ -111,17 +105,27 @@ footer {
     padding: 10px;
 }
 
+.card {
+    border: 3px solid transparent;
+}
+
+.card:hover {
+    border: 3px solid black;
+
+}
+
 .article1 {
     background-color: rgba(130, 237, 237, 0.661);
     text-align: center;
     color: white;
     font-family: 'Times New Roman', Times, serif;
 
+
 }
 
 .article1:hover {
     background-color: rgba(84, 166, 166, 0.962);
-    border: 3px solid #000000
+
 }
 
 .article2 {
@@ -131,7 +135,7 @@ footer {
 
 .article2:hover {
     background-color: #000000;
-    border: 3px solid #000000
+
 }
 
 h2 {
@@ -139,7 +143,7 @@ h2 {
     font-size: 25px;
 }
 
-.ul2 {
+.education {
     list-style-type: none;
     padding: 5px;
 
@@ -147,20 +151,16 @@ h2 {
 }
 
 
-
-
-.li1 {
+.listofSchool {
     background-color: rgba(255, 255, 255, 0.532);
     border-radius: 15px;
     margin: 10px;
     padding-top: -1px;
     content: normal;
 
-
-
 }
 
-.li1:hover {
+.listofSchool:hover {
     background-color: white;
     border-radius: 10px;
 
@@ -172,10 +172,9 @@ h4 {
     font-size: 22px;
     text-align: center;
 
-
 }
 
-.education {
+.nameofSchool {
     font-size: 18px;
     list-style: square;
     margin-top: -10px;
@@ -200,7 +199,7 @@ td {
 
 .article3:hover {
     background-color: rgba(0, 198, 233, 0.868);
-    border: 3px solid #000000
+
 }
 
 
@@ -218,10 +217,10 @@ th {
 
 .article4:hover {
     background-color: rgb(152, 152, 152);
-    border: 3px solid #000000
+
 }
 
-.a2 {
+.projecsLink {
     background-color: #0000006e;
     padding: 2px 3px;
     border-radius: 3px;
@@ -231,13 +230,13 @@ th {
 
 }
 
-.a2:hover {
+.projecsLink:hover {
     background-color: #000000;
     font-size: 18px;
 
 }
 
-.li4 {
+.nameofProjects {
     margin: 10px;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
@@ -245,26 +244,21 @@ th {
 }
 
 
-
-.project1 {
-    background-color: rgba(105, 245, 252, 0.542);
-    text-align: center;
-    color: white;
+.projectscard {
+    transition: 1s;
+    border: 3px solid transparent;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     padding: 30px;
-    transition: 1s;
+    text-align: center;
     margin: 20px;
 
 }
 
-.project1:hover {
-    border-radius: 50px;
-    background-color: rgba(105, 245, 252, 0.791);
-    transition: 1s;
+.projectscard:hover {
     border: 3px solid black;
-
-
+    border-radius: 50px;
+    transition: 1s;
 }
 
 .imgpro {
@@ -273,46 +267,40 @@ th {
 
 }
 
+.project1 {
+    background-color: rgba(105, 245, 252, 0.542);
+    color: white;
+   
 
+}
 
+.project1:hover {
+    background-color: rgba(105, 245, 252, 0.791);
 
+}
 
 
 .project2 {
     background-color: rgba(0, 0, 0, 0.428);
     color: beige;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    padding: 30px;
-    text-align: center;
-    transition: 1s;
-    margin: 20px;
+
 }
 
 .project2:hover {
-    border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.732);
-    transition: 1s;
-    border: 3px solid black;
+
 }
 
 
 .project3 {
     background-color: rgba(105, 245, 252, 0.542);
     color: beige;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
-    padding: 30px;
-    text-align: center;
-    transition: 1s;
-    margin: 20px;
+
 }
 
 .project3:hover {
-    border-radius: 50px;
     background-color: rgba(105, 245, 252, 0.791);
-    transition: 1s;
-    border: 3px solid black;
+
 }
 
 .form1 {
@@ -332,7 +320,6 @@ th {
 }
 
 .connect {
-
     background-color: rgba(249, 242, 242, 0.288);
     text-align: center;
     margin-left: 200px;
@@ -386,7 +373,6 @@ textarea {
     height: 50px;
     text-align: center;
 
-
 }
 
 .socialmedia:hover {
@@ -394,11 +380,9 @@ textarea {
 }
 
 
-
 footer {
     background-color: rgb(69, 69, 69);
     color: white;
     text-align: center;
-
 
 }
