@@ -1,23 +1,20 @@
 p {
   background-color: gray;
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size: 14pt;
-  line-height: 20px;
-  margin: 0 auto;
-  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 50vw;
+
 }
+
 
 
 
 .firstletter {
-  initial-letter: 3;
-  font-size: 100px;
-  line-height: 70px;
-  border-bottom: 3px solid red;
+  font-size: 80px;
+  border-bottom: 5px solid red;
+  padding-right: 8px;
 
 
 }
-
 
 
 .firstword {
