@@ -1,27 +1,23 @@
-body{
-    /* These are basic properties to remove the default margin and padding */
+body {
     margin: 0;
     padding: 0;
-    }
-    
-    .flex-container{
-    /* These are basic properties */
+}
+
+.flex-container {
     background-color: rgb(222, 135, 135);
     margin: 1em;
     padding: 1em;
     border: 2px solid black;
-    /* THESE ARE FLEXBOX PROPERTIES */
     display: flex;
     flex-direction: row;
     gap: 1em;
     flex-wrap: wrap;
 
-    }
-    
-   .flex-child {
-    /* These are basic properties */
+}
+
+.flex-child {
     background-color: rgb(219, 45, 45);
     border-radius: 10px;
     padding: 1em;
     color: white;
-    }
+}
