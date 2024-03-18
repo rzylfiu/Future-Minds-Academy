@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+.dFlex{
+    display: flex;
+}
+
+main{
+    flex-direction: row;
+}
+
+.card {
+    margin: 20px;
+    height: 500px;
+    width: 250px;
+    background-color: #fff;
+    border: 5px solid black;
+    box-shadow: 0 0 10px 10px #0000004d;
+
+    
+}
+
+.card-image {
+    position: relative;
+    width: 100%;
+    border-bottom: 5px solid #000;
+    z-index: 1;
+    height: calc(80% - 5px);
+    background-color: #A01F29;
+    border-top: 5px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-text {
+    justify-content: space-between;
+    height: 20%;
+}
+
+
+#marvel .card-text div {
+    width: 100%;
+}
+
+.card-date {
+    border-left: 3px solid black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+
+.card-price {
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+   
+
+.card-date span:first-child {
+    font-size: 3rem;
+    font-weight: 600;
+    
+}
+
+.card-date span:nth-of-type(2) {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.card-date span:last-child {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#marvel>.card-image p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 3;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fff;
+}
+
+img {
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    width: 60%;
+
+}

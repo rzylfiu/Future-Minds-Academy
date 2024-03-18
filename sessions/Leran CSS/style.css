@@ -1,0 +1,21 @@
+body{
+    margin: 10px;
+    padding:10px ;
+}
+
+#p1{
+    color: tomato;
+    font-family: "monospace", "sans-serif";
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: rgb(125, 2, 2) dotted underline;
+    font-size: medium;
+}
+
+.Bgreen{
+    background-color: green;
+    border-style: initial;
+   
+
+}
+

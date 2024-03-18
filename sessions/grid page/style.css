@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li,a{
+    text-decoration: none;
+    list-style: none;
+}
+ul{
+    display: flex;
+    
+  gap: 2rem;
+}
+
+.dGrid{
+    display: grid;
+}
+
+body{
+    background-color: gray;
+    grid-template-rows: 50px 1fr 50px;
+    height: 100vh;
+}
+
+.content{
+    grid-template-columns: 150px 1fr;
+}
+
+aside{
+    background-color: purple;
+    grid-template-rows: 20px 20px 20px;
+    gap: 3rem;
+    padding: 10px;
+
+}
+.row1, .row2, .row3{
+    grid-template-columns: 20px 20px;
+    gap: 3rem;
+}
+main{
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+main:hover .section1{
+    background-color: red;
+}
+
+.section1{
+    background-color: green;
+}
+.section23{
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    position: relative;
+
+}
+.section2{
+    background-color: pink;
+}
+
+.section3{
+    background-color: yellow;
+}
+
+
+.article4{
+    position: fixed;
+    width:50px;
+    top: 35px;
+    background-color: palevioletred;
+
+}
+footer{
+    background-color: blue;
+}
