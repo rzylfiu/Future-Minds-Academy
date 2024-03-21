@@ -1,24 +1,22 @@
 body {
-    background-color: pink;
+  background-color: pink;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
 }
 
 
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    
-  }
-  
-  .content .box {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border: 2px solid black;
-    background-color: white;
-    padding: 5px;
-    width: 33vw;
+.box {
 
-  }
+  border: 2px solid black;
+  background-color: white;
+  padding: 20px;
 
+
+
+}
