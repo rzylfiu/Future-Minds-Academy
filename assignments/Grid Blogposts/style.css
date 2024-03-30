@@ -49,6 +49,7 @@ main {
 
 .head {
     grid-template-columns: 90% 10%;
+    align-items: center;
     line-height: 30px;
     margin-top: 10px;
 
