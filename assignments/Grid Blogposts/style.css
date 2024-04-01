@@ -38,7 +38,7 @@ body {
 }
 
 main {
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
     padding: 40px;
     overflow: auto;
     padding: 25px;

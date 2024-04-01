@@ -1,0 +1,19 @@
+form{
+    background-color: rgb(190, 188, 188);
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+form .text{
+    width: 80%;
+    padding: 10px;
+}
+
+form .submit{
+    padding: 8px;
+    font-size: 15px;
+    background-color: rgb(90, 41, 165);
+    color: white;
+}
