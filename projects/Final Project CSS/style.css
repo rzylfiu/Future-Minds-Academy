@@ -1,298 +1,326 @@
 * {
     padding: 0;
     margin: 0;
+    cursor: url(assets/icons/page/cursor.png), auto;
+
+
+}
+
+/*variables*/
+:root {
+    --bg-color: red;
+}
+
+/*global*/
+
+.dFlex {
+    display: flex;
+    align-items: center;
+}
+
+.dGrid {
+    display: grid;
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+
+.content-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.Graytxt {
+    color: gray;
+}
+
+.mainCards {
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+
+.bgRed {
+    background-color: var(--bg-color);
+}
+
+.bgGreen {
+    background-color: rgb(105, 192, 105);
+}
+
+.bgOrange {
+    background-color: rgb(255, 184, 52);
+}
+
+.bgPink {
+    background-color: rgb(242, 92, 117);
+}
+
+.bgBlue {
+    background-color: rgb(56, 166, 218);
+}
+
+.padding20 {
+    padding: 20px;
+}
+
+.padding10 {
+    padding: 10px;
+}
+
+
+.cardsLogo {
+    transform: translateY(-35px);
+    border-radius: 2px;
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.marginT60 {
+    margin-top: 60px;
 }
 
 /*body*/
 
 body {
-    display: grid;
     grid-template-columns: auto 1fr;
-    background-color: rgba(0, 0, 0, 0.277);
-
-}
-
-
-/*aside*/
-
-aside {
-    background-image: url(assets/images/sidebar-1.jpg);
-    background-color: black;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.149);
+    font-family: "Roboto", sans-serif;
     height: 100vh;
 
 }
 
+/*aside*/
+
+.sidebar {
+    background-image: url(assets/images/sidebar-1.jpg);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    overflow-y: scroll;
+
+}
 
 .avatar {
     border-radius: 50%;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
+
 }
 
-aside>div {
-    display: grid;
+.sidebar>div {
     grid-template-columns: auto 1fr auto;
-    align-items: center;
-    justify-content: center;
     gap: 1rem;
-    color: white;
-    margin: 10px;
-    padding: 15px 30px;
-    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+    padding: 15px;
     border-radius: 5px;
 
 }
 
-.Fullpage{
-    display:grid ;
-    grid-template-rows: auto 1fr auto ;
+.hoverBg:hover {
+    background-color: rgba(255, 255, 255, 0.388);
 }
 
-.bgRed{
-    background-color: rgb(247, 53, 53);
-}
+.Fullpage {
+    margin: 20px 30px;
+    padding: 10px;
+    overflow-y: scroll;
+    height: 100vh;
 
+}
 
 /*header*/
 
-header {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    align-items: center;
-    margin: 2px;
-    padding: 20px 5px;
-    background-color: aquamarine;
 
-}
 
-header>div {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-header>div>form {
-    display: flex;
-    gap: 10px;
-}
-
-header>div>form>input {
+header>div>div>form>input {
     border: none;
     background-color: transparent;
     outline: none;
-    border-bottom:1px solid gray;
-
+    border-bottom: 2px solid gray;
 }
 
-.notifications{
+header>div>div>form>input:focus {
+    border-bottom: 2px solid rgb(144, 20, 144);
+    transition: 0.5s;
+}
+
+.notifications {
     position: relative;
 }
 
-.notificationsnumber{
+.notificationsnumber {
     position: absolute;
-    top: -8px;
-    right: -10px;
-    background-color: red;
+    top: -5px;
+    right: -8px;
+    background-color: var(--bg-color);
     border-radius: 50%;
-    border: 1px solid white;
-    color: white;
-    width: 12px;
-    height: 12px;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    width: 10px;
+    height: 10px;
     padding: 3px;
-    font-size: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 12px;
+}
+
+.newNotifications {
+    display: none;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    font-size: 13px;
+    width: 200px;
+}
+
+.notifications:hover .newNotifications {
+    display: grid;
+}
+
+.newNotifications>div:hover {
+    background-color: var(--bg-color);
+    color: white;
+    border-radius: 2px;
 }
 
 
 .circle {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    padding: 10px;
 }
 
-/*first card*/
-
-
-.firstCard{
-    background-color: white;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 2px;
-    
+.circle:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 }
 
-.fCardTittle{
-    position: relative;
-    display: grid;
+.headerMedia {
+    display: none;
+}
+
+
+
+/*main*/
+
+
+.fCardTittle {
     grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: 5rem;
-    font-family: sans-serif ;
-    font-size: 17px;
-    margin-bottom: 20px;
-    
-}
-
-.language{
-    background-color: rgb(54, 153, 54);
-    padding: 20px;
-    position: absolute;
-    top: -40px;
-    border-radius: 2px;
 }
 
 
-
-.TopLocations{
-    display: grid;
+.TopLocations {
     grid-template-columns: 1fr 3fr;
-    gap: 20px;
-    padding-top: 20px;
-    align-items: center;
-    color: rgb(84, 84, 84);
-   
-    
 }
 
 
-.Info-states{
-    display: grid;
+.Info-states {
     grid-template-columns: auto 1fr auto auto;
     gap: 10px;
-    padding: 10px;
-    margin: 3px;
- 
- }
- 
- .flags{
-     width: 15px;
-     height: 15px;
- }
+    margin: 5px;
+}
 
- .map{
+.flags {
+    width: 20px;
+}
+
+.map {
     height: 300px;
     width: 100%;
- }
- /*Karta e booking*/
- .hotelInfo{
-    background-color: white;
-    border-radius: 2px;
-    position: relative;
-   padding: 10px 10px 0 10px;
-  
-   
- }
+}
 
- .couch{
-    background-color: rgb(224, 118, 31);
-    padding: 20px;
-    position: absolute;
-    top: -20px;
-    border-radius: 2px;
 
- }
+.quote {
+    gap: 5px;
+    margin-bottom: -10px;
+}
 
-.BookingI{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding-bottom:20px ;
-
- }
-
- .quote{
-    display: flex;
-    align-items: center;
-  gap: 5px;
-  padding-bottom: 10px;
-
-   
- }
-
- .ndarjeHoteli{
-    display: grid;
+.aboutHotel {
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin: 10px;
-    
-   
- }
+    gap: 40px;
 
-
-
- /*KArta e visited*/
-
-main {
-    display: grid;
-    grid-template-rows: auto auto ;
-    gap: 3rem;
-    padding: 50px;
-    overflow: scroll;
-    
 }
 
+.Info {
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 20px;
+}
 
-
-/*KArtat e hotelit*/
-
-
-.Cards{
-    display: grid;
+.Cards {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
-    
-    
-}
-.HotelCard{
-    background-color: white;
-    padding: 20px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  
-    
-
+    margin-bottom: 20px;
 
 }
 
-.CardFig>img{
-    width:300px;
-    position: absolute;
-    top:-10px;
-    width: 50%;
-    
+.CardFig>img {
+    width: 100%;
+    transform: translateY(-40px);
+    border-radius: 2px;
+    transition: transform 1s ease;
+
+}
+
+.CardFig:hover {
+    transform: translateY(-35px);
+
 }
 
 
-.CardFig>figcaption{
-    text-align: center;
+.cardOptions {
+    margin: -70px 0 10px 0;
+
 }
 
-.CardDsp{
-    width: 50%;
-    
+@media (max-width: 1000px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .TopLocations {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .Cards {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .mainHeader {
+        display: none;
+    }
+
+    .headerMedia {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
 }
 
+@media (max-width: 600px) {
+    .aboutHotel {
+        grid-template-columns: 1fr;
 
-/*footer*/
-
-footer{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.About{
-    display: flex;
-    gap: 2rem;
-    font-size: 20px;
-    font-weight: bold;
+    }
 }
