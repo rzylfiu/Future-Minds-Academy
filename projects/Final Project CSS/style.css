@@ -79,6 +79,7 @@
 .cardsLogo {
     transform: translateY(-35px);
     border-radius: 2px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 
 }
 
@@ -95,7 +96,7 @@
 
 body {
     grid-template-columns: auto 1fr;
-    background-color: rgba(0, 0, 0, 0.149);
+    background-color: rgba(63, 62, 62, 0.149);
     font-family: "Roboto", sans-serif;
     height: 100vh;
 
@@ -113,10 +114,19 @@ body {
 
 }
 
+.border {
+    border-top: 2px ridge gray;
+    border-bottom: 2px ridge gray;
+}
+
+span {
+    font-weight: 800;
+}
+
 .avatar {
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
 
 }
 
@@ -124,8 +134,7 @@ body {
     grid-template-columns: auto 1fr auto;
     gap: 1.3rem;
     color: rgb(255, 255, 255);
-    margin: 10px;
-    padding: 10px;
+    margin: 15px;
     border-radius: 5px;
 
 }
@@ -135,8 +144,7 @@ body {
 }
 
 .Fullpage {
-    margin: 20px 30px;
-    padding: 10px;
+    margin: 20px;
     overflow-y: scroll;
     height: 100vh;
 
@@ -150,7 +158,8 @@ header>div>div>form>input {
     border: none;
     background-color: transparent;
     outline: none;
-    border-bottom: 2px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 5px;
 }
 
 header>div>div>form>input:focus {
@@ -165,7 +174,7 @@ header>div>div>form>input:focus {
 .notificationsnumber {
     position: absolute;
     top: -5px;
-    right: -8px;
+    right: -5px;
     background-color: var(--bg-color);
     border-radius: 50%;
     border: 1px solid rgb(255, 255, 255);
@@ -180,8 +189,8 @@ header>div>div>form>input:focus {
     display: none;
     background-color: rgb(255, 255, 255);
     position: absolute;
-    top: 10px;
-    right: 18px;
+    top: 8px;
+    right: 12px;
     font-size: 13px;
     width: 200px;
 }
@@ -193,7 +202,7 @@ header>div>div>form>input:focus {
 .newNotifications>div:hover {
     background-color: var(--bg-color);
     color: white;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 
@@ -202,10 +211,12 @@ header>div>div>form>input:focus {
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    transition: 0.3s;
 }
 
 .circle:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease;
 }
 
 .headerMedia {
@@ -264,26 +275,53 @@ header>div>div>form>input:focus {
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 20px;
 
+
 }
 
 .CardFig>img {
     width: 100%;
     transform: translateY(-40px);
     border-radius: 2px;
-    transition: transform 1s ease;
 
 }
 
-.CardFig:hover {
-    transform: translateY(-35px);
+.CardFig {
+    transition: 0.5s transform ease;
 
+
+}
+
+
+
+.ListingCard:hover .CardFig {
+    transform: translateY(-35px);
+    transition: 0.5s;
+}
+
+
+.ListingCard {
+    position: relative;
+    transition: 0.5s transform ease;
 }
 
 
 .cardOptions {
-    margin: -70px 0 10px 0;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
 
 }
+
+.ListingCard:hover .cardOptions {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+
+
 
 @media (max-width: 1000px) {
 
