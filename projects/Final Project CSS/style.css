@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
     padding: 0;
     margin: 0;
@@ -14,11 +21,16 @@
 /*global*/
 
 .dFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .dGrid {
+    display: -ms-grid;
     display: grid;
 }
 
@@ -27,13 +39,19 @@
 }
 
 .space-between {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 
 .content-center {
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .Graytxt {
@@ -77,9 +95,12 @@
 
 
 .cardsLogo {
-    transform: translateY(-35px);
+    -webkit-transform: translateY(-35px);
+        -ms-transform: translateY(-35px);
+            transform: translateY(-35px);
     border-radius: 2px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 
 }
 
@@ -95,6 +116,7 @@
 /*body*/
 
 body {
+    -ms-grid-columns: auto 1fr;
     grid-template-columns: auto 1fr;
     background-color: rgba(63, 62, 62, 0.149);
     font-family: "Roboto", sans-serif;
@@ -131,6 +153,7 @@ span {
 }
 
 .sidebar>div {
+    -ms-grid-columns: auto 1.3rem 1fr 1.3rem auto;
     grid-template-columns: auto 1fr auto;
     gap: 1.3rem;
     color: rgb(255, 255, 255);
@@ -164,6 +187,8 @@ header>div>div>form>input {
 
 header>div>div>form>input:focus {
     border-bottom: 2px solid rgb(144, 20, 144);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
@@ -196,6 +221,7 @@ header>div>div>form>input:focus {
 }
 
 .notifications:hover .newNotifications {
+    display: -ms-grid;
     display: grid;
 }
 
@@ -211,11 +237,16 @@ header>div>div>form>input:focus {
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
 .circle:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 
@@ -229,16 +260,19 @@ header>div>div>form>input:focus {
 
 
 .fCardTittle {
+    -ms-grid-columns: auto 1fr;
     grid-template-columns: auto 1fr;
 }
 
 
 .TopLocations {
+    -ms-grid-columns: 1fr 3fr;
     grid-template-columns: 1fr 3fr;
 }
 
 
 .Info-states {
+    -ms-grid-columns: auto 10px 1fr 10px auto 10px auto;
     grid-template-columns: auto 1fr auto auto;
     gap: 10px;
     margin: 5px;
@@ -260,18 +294,21 @@ header>div>div>form>input:focus {
 }
 
 .aboutHotel {
+    -ms-grid-columns: 1fr 40px 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
 
 }
 
 .Info {
+    -ms-grid-rows: 1fr 40px 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 40px;
     margin-bottom: 20px;
 }
 
 .Cards {
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 20px;
 
@@ -280,13 +317,19 @@ header>div>div>form>input:focus {
 
 .CardFig>img {
     width: 100%;
-    transform: translateY(-40px);
+    -webkit-transform: translateY(-40px);
+        -ms-transform: translateY(-40px);
+            transform: translateY(-40px);
     border-radius: 2px;
 
 }
 
 .CardFig {
+    -webkit-transition: 0.5s -webkit-transform ease;
+    transition: 0.5s -webkit-transform ease;
+    -o-transition: 0.5s transform ease;
     transition: 0.5s transform ease;
+    transition: 0.5s transform ease, 0.5s -webkit-transform ease;
 
 
 }
@@ -294,14 +337,22 @@ header>div>div>form>input:focus {
 
 
 .ListingCard:hover .CardFig {
-    transform: translateY(-35px);
+    -webkit-transform: translateY(-35px);
+        -ms-transform: translateY(-35px);
+            transform: translateY(-35px);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 
 .ListingCard {
     position: relative;
+    -webkit-transition: 0.5s -webkit-transform ease;
+    transition: 0.5s -webkit-transform ease;
+    -o-transition: 0.5s transform ease;
     transition: 0.5s transform ease;
+    transition: 0.5s transform ease, 0.5s -webkit-transform ease;
 }
 
 
@@ -309,14 +360,20 @@ header>div>div>form>input:focus {
     position: absolute;
     bottom: 40px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     opacity: 0;
+    -webkit-transition: opacity 0.4s ease;
+    -o-transition: opacity 0.4s ease;
     transition: opacity 0.4s ease;
 
 }
 
 .ListingCard:hover .cardOptions {
     opacity: 1;
+    -webkit-transition: opacity 0.6s ease;
+    -o-transition: opacity 0.6s ease;
     transition: opacity 0.6s ease;
 }
 
@@ -330,11 +387,13 @@ header>div>div>form>input:focus {
     }
 
     .TopLocations {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
 
     }
 
     .Cards {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         gap: 4rem;
     }
@@ -344,8 +403,12 @@ header>div>div>form>input:focus {
     }
 
     .headerMedia {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
 
@@ -353,6 +416,7 @@ header>div>div>form>input:focus {
 
 @media (max-width: 600px) {
     .aboutHotel {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
 
     }
