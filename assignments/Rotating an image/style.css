@@ -3,6 +3,7 @@ img {
     width: 50%;
     transition: 2s;
     transition-property: transform;
+    margin: 50px;
 
 }
 
