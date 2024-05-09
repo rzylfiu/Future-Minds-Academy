@@ -1,13 +1,14 @@
 img {
     filter: blur(10px);
     width: 50%;
-    transition: 2s;
-    transition-property: transform;
+    transition: transform 2s;
     margin: 50px;
+
 
 }
 
 img:hover {
     filter: blur(0px);
     transform: rotate(720deg);
+    transition: transform 2s;
 }

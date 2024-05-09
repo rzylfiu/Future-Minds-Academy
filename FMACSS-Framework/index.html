@@ -8,29 +8,524 @@
     <link rel="stylesheet" href="./assets/css/fma-general.css">
     <link rel="stylesheet" href="./assets/css/fma-responsive.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+
+
+
+
+
+
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Our Tours</a></li>
-                <li><a>Gallery</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contact Us</a></li>
-                <li><a>Pages</a></li>
 
-            </ul>
-        </nav>
+    <header class="wrapper-full ">
+        <div class="row just-between align-center ">
+            <div>
+                <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-s"></a>
+            </div>
+
+            <div class="dFlex g-2 align-center ">
+
+                <div class="menu">
+                    <div class="text">
+                        <p>Menu</p>
+
+                    </div>
+                    <div class="clone">
+                        <p>Open</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="dFlex align-center gap-2 ">
+                <button class="btn-header"><span class="icon"><img src="assets/img/airplane.svg"
+                            alt="airplane"></span><span class="text">Book now</span></button>
+            </div>
+        </div>
+
     </header>
+
     <main>
+        <section class="welcome">
+            <div class="main-img ">
+                <figure class="mainBg "><img src="assets/img/hero-1-main-bg-1.png" alt="" class="img-xxl"></figure>
+                <h1>Travel</h1>
+                <p>Explore wherever your heart leads you!</p>
+                <figure class="mask-layer"><img src="assets/img/mask-layer.png" alt="" class="img-xxl"></figure>
+                <div class="optionsMenu align-center just-center row ">
+                    <form action="#">
+                        <select name="select" id="contry">
+                            <option selected="select" disabled="disabled" class="option">Where to?</option>
+                            <option value="2" class="option">Kyoto, Japan</option>
+                            <option value="3" class="option">Bali, Indonesia</option>
+                            <option value="4" class="option">Paris, France</option>
+                            <option value="5" class="option">Hawaii, USA</option>
+                            <option value="6" class="option">Rome, Italy</option>
+                        </select>
+                        <select name="select" id="deparature">
+                            <option selected="select" disabled="disabled">Select Departure</option>
+                            <option value="2" class="option">Mumbai, India</option>
+                            <option value="3" class="option">Toronto Canada</option>
+                            <option value="4" class="option">Rome, Italy</option>
+                            <option value="5" class="option">Istanbul, Turkey</option>
+                            <option value="6" class="option">Ciaro,Egypt</option>
+                            <option value="7" class="option">Paris, France</option>
+                        </select>
+                        <select name="select" id="type">
+                            <option selected="select" disabled="disabled">Select Type</option>
+                            <option value="2" class="option">Adventure </option>
+                            <option value="3" class="option">Historical/Cultural</option>
+                            <option value="4" class="option">Beach</option>
+                            <option value="5" class="option">Relaxation</option>
+                            <option value="6" class="option">Romantic</option>
+                        </select>
+
+                    </form>
+
+                    <button class="btn">Find Now</button>
+
+                </div>
+            </div>
+        </section>
+        <div class="p-4 bgline">
+            <section class="aboutUs align-center just-between">
+                <article class="content">
+                    <p>about us:</p>
+                    <h1>When passion and adventure collide, they ignite the flames of your wanderlust, driving your
+                        desires
+                        to
+                        explore.
+                    </h1>
+                    <button class="btn">Learn more</button>
+                </article>
+
+                <article class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/img/img.unsplash.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/img.unsplash2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/img2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/imgparis.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/unsplash.jpg" alt=""></div>
+                    </div>
+                </article>
+
+
+
+            </section>
+
+            <div>
+                <div class="dFlex align-center cards-tittle just-center gap-1 m-1">
+                    <p>tour list:</p>
+                    <h1>Incredible journeys curated just for you!</h1>
+                </div>
+
+                <section class="cards">
+                    <article class="card">
+
+                        <figure class="card-img"><img src="assets/img/card.jpg" alt=""></figure>
+                        <div class="card-content">
+                            <div class="card-info">
+                                <h1>Fresh water lake</h1>
+                                <div class="dFlex align-center card-location">
+                                    <figure><img src="assets/img/location.svg" alt="location" class="img-xs"></figure>
+                                    <h5>Serengeti National Park </h5>
+                                </div>
+                            </div>
+                            <div class="dFlex card-footer align-center">
+                                <div class=" dFlex card-date align-center">
+                                    <figure><img src="assets/img/date.svg" alt="date" class="img-xs"></figure>
+                                    <p>6 days</p>
+                                </div>
+                                <div class="dFlex card-persons align-center">
+                                    <figure><img src="assets/img/person.svg" alt="person" class="img-xs"></figure>
+                                    <p>6 person</p>
+                                </div>
+                                <h4>$5000</h4>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <label class="ui-bookmark">
+                            <input type="checkbox">
+                            <div class="bookmark">
+                                <svg viewBox="0 0 32 32">
+                                    <g>
+                                        <path
+                                            d="M27 4v27a1 1 0 0 1-1.625.781L16 24.281l-9.375 7.5A1 1 0 0 1 5 31V4a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </label>
+                    </article>
+                    <article class="card">
+
+                        <figure class="card-img"><img src="assets/img/card3.jpg" alt=""></figure>
+                        <div class="card-content">
+                            <div class="card-info">
+                                <h1>Fresh water lake</h1>
+                                <div class="dFlex align-center card-location">
+                                    <figure><img src="assets/img/location.svg" alt="location" class="img-xs"></figure>
+                                    <h5>Serengeti National Park </h5>
+                                </div>
+                            </div>
+                            <div class="dFlex card-footer align-center">
+                                <div class=" dFlex card-date align-center">
+                                    <figure><img src="assets/img/date.svg" alt="date" class="img-xs"></figure>
+                                    <p>6 days</p>
+                                </div>
+                                <div class="dFlex card-persons align-center">
+                                    <figure><img src="assets/img/person.svg" alt="person" class="img-xs"></figure>
+                                    <p>6 person</p>
+                                </div>
+                                <h4>$5000</h4>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <label class="ui-bookmark">
+                            <input type="checkbox">
+                            <div class="bookmark">
+                                <svg viewBox="0 0 32 32">
+                                    <g>
+                                        <path
+                                            d="M27 4v27a1 1 0 0 1-1.625.781L16 24.281l-9.375 7.5A1 1 0 0 1 5 31V4a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </label>
+                    </article>
+                    <article class="card">
+
+                        <figure class="card-img"><img src="assets/img/card2.jpg" alt=""></figure>
+                        <div class="card-content">
+                            <div class="card-info">
+                                <h1>Fresh water lake</h1>
+                                <div class="dFlex align-center card-location">
+                                    <figure><img src="assets/img/location.svg" alt="location" class="img-xs"></figure>
+                                    <h5>Serengeti National Park </h5>
+                                </div>
+                            </div>
+                            <div class="dFlex card-footer align-center">
+                                <div class=" dFlex card-date align-center">
+                                    <figure><img src="assets/img/date.svg" alt="date" class="img-xs"></figure>
+                                    <p>6 days</p>
+                                </div>
+                                <div class="dFlex card-persons align-center">
+                                    <figure><img src="assets/img/person.svg" alt="person" class="img-xs"></figure>
+                                    <p>6 person</p>
+                                </div>
+                                <h4>$5000</h4>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <label class="ui-bookmark">
+                            <input type="checkbox">
+                            <div class="bookmark">
+                                <svg viewBox="0 0 32 32">
+                                    <g>
+                                        <path
+                                            d="M27 4v27a1 1 0 0 1-1.625.781L16 24.281l-9.375 7.5A1 1 0 0 1 5 31V4a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </label>
+                    </article>
+                    <article class="card">
+
+                        <figure class="card-img"><img src="assets/img/card1.jpg" alt=""></figure>
+                        <div class="card-content">
+                            <div class="card-info">
+                                <h1>Fresh water lake</h1>
+                                <div class="dFlex align-center card-location">
+                                    <figure><img src="assets/img/location.svg" alt="location" class="img-xs"></figure>
+                                    <h5>Serengeti National Park </h5>
+                                </div>
+                            </div>
+                            <div class="dFlex card-footer align-center">
+                                <div class=" dFlex card-date align-center">
+                                    <figure><img src="assets/img/date.svg" alt="date" class="img-xs"></figure>
+                                    <p>6 days</p>
+                                </div>
+                                <div class="dFlex card-persons align-center">
+                                    <figure><img src="assets/img/person.svg" alt="person" class="img-xs"></figure>
+                                    <p>6 person</p>
+                                </div>
+                                <h4>$5000</h4>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <label class="ui-bookmark">
+                            <input type="checkbox">
+                            <div class="bookmark">
+                                <svg viewBox="0 0 32 32">
+                                    <g>
+                                        <path
+                                            d="M27 4v27a1 1 0 0 1-1.625.781L16 24.281l-9.375 7.5A1 1 0 0 1 5 31V4a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </label>
+                    </article>
+
+
+                </section>
+            </div>
+      
+        <section>
+            <div class="dFlex city-title align-center just-center">
+                <p>destinations:</p>
+                <h1>Best Travel Places</h1>
+            </div>
+            <div class="aboutCitys">
+                <article class="city-content">
+                    <div class="city-info">
+                        <h1>Amsterdam</h1>
+                        <p>Amsterdam, the Netherlands' vibrant capital, is famed for its picturesque canals,
+                            historic
+                            architecture, and cultural richness. Its eclectic atmosphere blends seamlessly with
+                            progressive
+                            ideals, making it a haven for artists, cyclists, and explorers alike. From world-class
+                            museums to
+                            cozy cafes, Amsterdam offers an unforgettable blend of tradition and modernity.From
+                            world-class museums to
+                            cozy cafes, Amsterdam offers an unforgettable blend of tradition and modernity</p>
+                    </div>
+                    <figure class="city-img"><img src="assets/img/amsterdam.jpg" alt="Amsterdam"></figure>
+                </article>
+
+
+
+                <article class="city-content">
+                    <figure class="city-img"><img src="assets/img/grece.jpg" alt="Amsterdam"></figure>
+                    <div class="city-info">
+                        <h1>Greece</h1>
+                        <p>Amsterdam, the Netherlands' vibrant capital, is famed for its picturesque canals,
+                            historic
+                            architecture, and cultural richness. Its eclectic atmosphere blends seamlessly with
+                            progressive
+                            ideals, making it a haven for artists, cyclists, and explorers alike. From world-class
+                            museums to
+                            cozy cafes, Amsterdam offers an unforgettable blend of tradition and modernity.From
+                            world-class museums to
+                            cozy cafes, Amsterdam offers an unforgettable blend of tradition and modernity</p>
+                    </div>
+
+                </article>
+
+                <article class="city-content">
+                    <div class="city-info">
+                        <h1>Italy</h1>
+                        <p>Amsterdam, the Netherlands' vibrant capital, is famed for its picturesque canals,
+                            historic
+                            architecture, and cultural richness. Its eclectic atmosphere blends seamlessly with
+                            progressive
+                            ideals, making it a haven for artists, cyclists, and explorers alike. From world-class
+                            museums to
+                            cozy cafes, Amsterdam offers an unforgettable blend of tradition and modernity.From
+                            world-class museums to
+                            cozy cafes, Amsterdam offers an unforgettable blend of tradition and modernity</p>
+                    </div>
+                    <figure class="city-img"><img src="assets/img/italy.jpg" alt="Amsterdam"></figure>
+                </article>
+
+
+
+
+
+
+
+
+            </div>
+        </section>
+
+
+    </div>
+    <div class="p-4">
+
+        <section class="discount">
+            <div class="discount-content">
+
+                <figure><img src="assets/img/main-object.png" alt=""></figure>
+                <div class="discount-info">
+                    <h1>Interested?</h1>
+                    <h3>Discount if you book now</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, corporis! Amet
+                        architecto
+                        placeat suscipit earum? Ab sapiente omnis labore ducimus assumenda, porro itaque sed aut
+                        repudiandae, quam cupiditate corporis animi!</p>
+                    <button class="btn">Get in touch</button>
+                </div>
+
+                <div class="discount-offer">
+                    <span>30%</span> <span>OFF</span>
+                </div>
+            </div>
+        </section>
+    </div>
+        <section>
+
+        </section>
+
+        <section class="scoll-content dGrid ">
+            <div>
+                <p>instagram</p>
+                <h1>Travel Galleries</h1>
+            </div>
+            <div class="scrollImg">
+                <div class="scroller">
+                    <div class="scroller-inner">
+                        <div class="zoom-img">
+                            <figure>
+                                <img src="assets/img/scimg.png" alt="">
+                            </figure>
+                        </div>
+                        <div class="zoom-img">
+                            <figure> <img src="assets/img/scoll.png" alt=""></figure>
+                        </div>
+                        <div class="zoom-img">
+                            <figure> <img src="assets/img/scroollimg.png" alt=""></figure>
+                        </div>
+                        <div class="zoom-img">
+                            <figure><img src="assets/img/scroollimgg.png" alt=""></figure>
+                        </div>
+                        <div class="zoom-img">
+                            <figure><img src="assets/img/imgss.png" alt=""></figure>
+                        </div>
+                        <div class="zoom-img">
+                            <figure> <img src="assets/img/imgscroll.png" alt=""></figure>
+                        </div>
+                        <div class="zoom-img">
+                            <figure>
+                                <img src="assets/img/scimg.png" alt="">
+                            </figure>
+                        </div>
+                        <div class="zoom-img">
+                            <figure> <img src="assets/img/scoll.png" alt=""></figure>
+                        </div>
+                        <div class="zoom-img">
+                            <figure> <img src="assets/img/scroollimg.png" alt=""></figure>
+                        </div>
+                        <div class="zoom-img">
+                            <figure><img src="assets/img/scroollimgg.png" alt=""></figure>
+                        </div>
+                        <div class="zoom-img">
+                            <figure><img src="assets/img/imgss.png" alt=""></figure>
+                        </div>
+                        <div class="zoom-img">
+                            <figure> <img src="assets/img/imgscroll.png" alt=""></figure>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 
     </main>
+
     <footer>
 
+
+
+        <div class="row just-between m-2">
+
+            <div>
+                <h2>Site map</h2>
+                <div class="row-direction">
+                    <a href="*">About Us</a>
+                    <a href="*">Contact Us</a>
+                    <a href="*">Booking Page</a>
+                    <a href="*">Blogs</a>
+                </div>
+            </div>
+            <div>
+                <h2>Categories</h2>
+                <div class="row-direction">
+                    <a href="*">Package</a>
+                    <a href="*">Tours</a>
+                    <a href="*">Honeymoon Plans</a>
+                    <a href="*">Couple Trip</a>
+                    <a href="*">Family Trips</a>
+                </div>
+            </div>
+
+            <div>
+                <h2>Contant Info</h2>
+                <div class="
+                    row-direction">
+                    <a href="*">1300337446</a>
+                    <a href="*">sales@iof.com.au</a>
+                </div>
+            </div>
+
+            <div>
+                <h2>Opening Hour
+                </h2>
+                <p>Mon-Fri</p>
+                <p>09am-5pm</p>
+                <p>Sat-Sun</p>
+                <p>09am-5pm</p>
+            </div>
+        </div>
+
+
+
     </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cards",
+            grabCursor: true,
+        });
+
+        $(document).ready(function() {
+  function scrollScroller() {
+    var scroller = $('.scroller');
+    var scrollerWidth = scroller.width();
+    var scrollerInnerWidth = scroller.find('.scroller-inner').width();
+
+    if (scroller.scrollLeft() >= scrollerInnerWidth - scrollerWidth) {
+      scroller.scrollLeft(0);
+    } else {
+      scroller.scrollLeft(scroller.scrollLeft() + 1);
+    }
+  }
+
+  setInterval(scrollScroller, 10);
+});
+
+    </script>
+
+
 </body>
 
 </html>

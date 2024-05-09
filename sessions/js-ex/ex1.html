@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+
+    <h1 class="fullname"> </h1>
+    <h2 class="currentYear"> </h2>
+
+
+
+    <script>
+        let firstname = "Rinesa";
+        let lastname = "Zylfiu";
+        let year = 2024;
+
+
+        console.log(firstname + " " + lastname);
+        console.log(3 + 3 )
+
+        let fullname = document.querySelector(".fullname");
+        fullname.innerHTML = firstname + " " + lastname;
+
+        console.log(year);
+
+        let currentYear = document.querySelector(".currentYear");
+        currentYear.innerHTML = "Current Year is:" + year;
+
+    </script>
+</body>
+
+</html>
