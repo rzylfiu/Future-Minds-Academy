@@ -1,0 +1,84 @@
+
+:root{
+    --color-pg:orange;
+}
+
+
+.discount {
+    border: 0.3px ridge rgb(103, 102, 102);
+    margin: 70px 0;
+    border-radius: 20px;
+    height: 580px;
+ }
+ 
+ .discount-content {
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: 10px;
+    height: 560px;
+    background-image: url(.../FMACSS-Framework/assets/img/discount-banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+ 
+ }
+ 
+ .discount-content img {
+    width: 35%;
+    top: 40px;
+    left: 50px;
+ 
+ 
+ }
+ 
+ .discount-info {
+    bottom: 130px;
+    left: 650px;
+    z-index: 1;
+    position: absolute;
+ 
+ }
+ 
+ .discount-info h1 {
+    font-size: 80px;
+    color: white;
+    padding-top: 10px;
+ 
+ }
+ 
+ .discount-info h3 {
+    font-size: 20px;
+    color: var(--color-pg);
+    padding-top: 10px;
+ }
+ 
+ 
+ 
+ .discount-info p {
+    width: 80%;
+    color: white;
+    padding: 20px 0;
+ 
+ }
+ 
+ .discount-offer {
+    width: 130px;
+    height: 130px;
+    background-color: var(--color-pg);
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    top: -100px;
+    right: 80px;
+    transform: rotate(20deg);
+    transform-origin: top left;
+    z-index: -1;
+ }
+ 
+ .discount-offer span:first-child {
+    font-size: 45px;
+ }
+ 
+ 
