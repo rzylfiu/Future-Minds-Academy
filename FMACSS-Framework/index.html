@@ -23,7 +23,7 @@
 
     <header class="wrapper-full p-1 p-absolute">
         <div class="row just-between align-center ">
-            <div>
+            <div class="remove-phone">
                 <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-s"></a>
             </div>
 
@@ -42,24 +42,41 @@
 
             </div>
             <div class="dFlex align-center gap-2 ">
-                <button class="btn-header dFlex align-center p-0 font-size-20 cursor-p"><span
+                <button class="btn-header dFlex align-center p-0 font-size-20 cursor-p "><span
                         class="icon dFlex align-center just-center"><img src="assets/img/airplane.svg"
-                            alt="airplane"></span><span class="text ">Book now</span></button>
+                            alt="airplane"></span><span class="text  ">Book now</span></button>
             </div>
         </div>
 
     </header>
 
     <main>
-        
+
         <section class="welcome">
-            <div class="main-img p-relative ">
-                <figure class="mainBg "><img src="assets/img/hero-1-main-bg-1.png" alt="" class="img-xxl"></figure>
-                <h1 class="p-absolute text-uppercase">Travel</h1>
-                <p class="p-absolute font-size-30">Explore wherever your heart leads you!</p>
-                <figure class="mask-layer"><img src="assets/img/mask-layer.png" alt="" class="img-xxl p-absolute">
+            <div class="mobileImg p-relative">
+                <figure class="banner-mobile">
+                    <img src="assets/img/banner-mobile-bg.png" alt="">
                 </figure>
-                <div class="optionsMenu align-center just-center row p-0 p-absolute">
+
+                <h1 class="p-absolute text-uppercase ">Travel</h1>
+                <p class="p-absolute font-size-30 ">Explore wherever your heart leads you!</p>
+
+                <figure class="mobile-mask p-absolute">
+                    <img src="assets/img/mobilemask.png" alt="">
+                </figure>
+
+            </div>
+
+            <div class=" main-img p-relative ">
+                <figure class=" mainBg remove-phone "><img src=" assets/img/hero-1-main-bg-1.png" alt=""
+                        class="img-xxl">
+                </figure>
+                <h1 class="p-absolute text-uppercase remove-phone">Travel</h1>
+                <p class="p-absolute font-size-30 remove-phone">Explore wherever your heart leads you!</p>
+                <figure class="mask-layer  remove-phone"><img src="assets/img/mask-layer.png" alt=""
+                        class="img-xxl p-absolute">
+                </figure>
+                <div class="optionsMenu align-center just-center row p-0 p-absolute img-tablet-100">
                     <form action="#">
                         <select name="select" id="contry" class="p-0 m-0">
                             <option selected="select" disabled="disabled" class="option">Where to?</option>
@@ -96,9 +113,9 @@
                 </div>
             </div>
         </section>
-        <div class="p-4 bgline all-page-p ">
+        <div class="p-4 bgline all-page-p mobile-margin-top ">
             <section class="aboutUs dGrid align-center just-center">
-                <article class="m-3  content ">
+                <article class="m-3  content just-phone-center align-phone-center txt-phone-al-center ">
                     <p class="p-content ">about us:</p>
                     <h1 class="text-uppercase img-lg font-size-30">When passion and adventure collide, they ignite the
                         flames of your
@@ -107,7 +124,7 @@
                         to
                         explore.
                     </h1>
-                    <button class="btn text-uppercase p-relative bottom-shadow m-top remove-phone cursor-p">
+                    <button class="btn text-uppercase p-relative bottom-shadow m-top  cursor-p">
                         <span class="btn-text-one p-absolute img-xxl">Learn More</span>
                         <span class="btn-text-two p-absolute img-xxl">Learn More</span>
                     </button>
@@ -321,7 +338,7 @@
                     </div>
                 </div>
                 <div class="aboutCitys dGrid ">
-                    <article class="city-content dFlex align-center just-between g-8">
+                    <article class="city-content dFlex align-center just-between g-8 just-phone-center txt-phone-al-center">
                         <div class="city-info">
                             <h1 class="text-uppercase">Amsterdam</h1>
                             <p>Amsterdam, a city of charming canals and eclectic architecture, epitomizes Dutch culture
@@ -335,7 +352,7 @@
 
 
 
-                    <article class="city-content dFlex align-center just-between g-8">
+                    <article class="city-content dFlex align-center just-between g-8 just-phone-center txt-phone-al-center">
                         <figure class="city-img p-0"><img src="assets/img/grece.jpg" alt="Amsterdam"></figure>
                         <div class="city-info">
                             <h1 class="text-uppercase">Greece</h1>
@@ -348,7 +365,7 @@
 
                     </article>
 
-                    <article class="city-content dFlex align-center just-between g-8">
+                    <article class="city-content dFlex align-center just-between g-8 just-phone-center txt-phone-al-center">
                         <div class="city-info">
                             <h1 class="text-uppercase">Italy</h1>
                             <p>Italy, a cradle of art, history, and romance, boasts architectural marvels like the
@@ -378,7 +395,7 @@
             <section class="discount">
                 <div class="discount-content m-0 dFlex align-center just-between gap-12">
 
-                    <figure class="m-4 discount-img" ><img src="assets/img/main-object.png" alt="" ></figure>
+                    <figure class="m-4 discount-img"><img src="assets/img/main-object.png" alt=""></figure>
                     <div class="discount-info p-relative ">
                         <h1 class="text-uppercase">Interested?</h1>
                         <h3 class="text-uppercase">Discount if you book now</h3>
@@ -386,10 +403,10 @@
                             architecto
                             placeat suscipit earum? Ab sapiente omnis labore ducimus assumenda, porro itaque sed aut
                             repudiandae, quam cupiditate corporis animi!</p>
-                            <button class="btn text-uppercase p-relative bottom-shadow cursor-p">
-                                <span class="btn-text-one p-absolute img-xxl">Get in touch</span>
-                                <span class="btn-text-two p-absolute img-xxl">Get in touch</span>
-                            </button>
+                        <button class="btn text-uppercase p-relative bottom-shadow cursor-p">
+                            <span class="btn-text-one p-absolute img-xxl">Get in touch</span>
+                            <span class="btn-text-two p-absolute img-xxl">Get in touch</span>
+                        </button>
 
 
                         <div class="discount-offer text-center row-direction align-center just-center p-absolute">
@@ -487,7 +504,7 @@
                 </div>
 
             </section>
-            <section class=" dFlex  g-4  site-info  m-4 align-center just-between">
+            <section class=" dFlex  g-4  site-info  m-4 align-center just-between row-tablet">
                 <div>
                     <figure><img src="./assets/img/footer-logo.png" alt="" class="footer-logo"></figure>
                 </div>

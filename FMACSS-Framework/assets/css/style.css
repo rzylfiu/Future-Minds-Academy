@@ -2,7 +2,7 @@
    margin: 0;
    padding: 0;
    text-decoration: none;
- 
+
 }
 
 /*variables*/
@@ -50,11 +50,11 @@
    font-size: 25px;
 }
 
-.m-top{
+.m-top {
    margin-top: 10px;
 }
 
-.cursor-p{
+.cursor-p {
    cursor: pointer;
 }
 
@@ -68,39 +68,39 @@
    border: none;
    outline: none;
    overflow: hidden;
-   
- }
 
- .btn span {
+}
+
+.btn span {
    font-size: 14px;
    transition: top 0.5s;
- }
- 
+}
+
 
 .btn-text-one {
    top: 50%;
    left: 0;
    transform: translateY(-50%);
- }
- 
- .btn-text-two {
+}
+
+.btn-text-two {
    top: 150%;
    left: 0;
    transform: translateY(-50%);
- }
- 
- .btn:hover .btn-text-one {
+}
+
+.btn:hover .btn-text-one {
    top: -100%;
- }
- 
- .btn:hover .btn-text-two {
+}
+
+.btn:hover .btn-text-two {
    top: 50%;
- }
+}
 
 body {
    background-image: url(../img/body-bg.png);
    background-size: cover;
-
+   background-repeat: no-repeat;
 }
 
 .bgline {
@@ -212,6 +212,11 @@ svg:hover .icon {
    height: 100vh;
 }
 
+.mobileImg {
+   display: none;
+}
+
+
 .mainBg img {
    height: auto;
 
@@ -270,7 +275,7 @@ svg:hover .icon {
 
 .aboutUs {
    grid-template-columns: 2fr 1fr;
-   margin: 200px 0 ;
+   margin: 200px 0;
 
 }
 
@@ -294,6 +299,7 @@ svg:hover .icon {
    grid-template-columns: 1fr 1fr 1fr 1fr;
 
 }
+
 .card {
    border-radius: 10px;
    overflow: hidden;
@@ -383,7 +389,7 @@ svg:hover .icon {
    width: 18px;
    height: 18px;
    object-fit: cover;
- 
+
 }
 
 
@@ -606,11 +612,11 @@ svg:hover .icon {
 }
 
 .discount-content img {
-width: 130%;
+   width: 130%;
 
 }
 
-.discount-info{
+.discount-info {
    z-index: 2;
    margin-left: 40px;
 }
@@ -650,7 +656,7 @@ width: 130%;
    transform: rotate(20deg);
    transform-origin: top left;
    z-index: -1;
-  
+
 }
 
 .discount-offer span:first-child {
@@ -840,8 +846,6 @@ footer {
    background-color: var(--color-pg);
 }
 
-
-/* for all social containers*/
 .socialContainer {
    width: 50px;
    height: 50px;
@@ -851,25 +855,21 @@ footer {
    transition-duration: 0.3s;
 }
 
-/* instagram*/
 .containerOne:hover {
    background-color: #d62976;
    transition-duration: 0.3s;
 }
 
-/* twitter*/
 .containerTwo:hover {
    background-color: #00acee;
    transition-duration: 0.3s;
 }
 
-/* linkdin*/
 .containerThree:hover {
    background-color: #0072b1;
    transition-duration: 0.3s;
 }
 
-/* Whatsapp*/
 .containerFour:hover {
    background-color: green;
    transition-duration: 0.3s;
@@ -914,120 +914,202 @@ footer {
 }
 
 
-@media only screen and (max-width:  1080px){
+@media only screen and (max-width: 1080px) {
 
-   .mask-layer{
+   .mask-layer {
       transform: translateY(-45px);
    }
 
-   .main-img>h1{
+   .main-img>h1 {
       font-size: 100px;
       top: 270px;
    }
 
-   .main-img>p{
+   .main-img>p {
       font-size: 20px;
       top: 350px;
       left: 375px;
    }
-    
-   .cards{ grid-template-columns: 1fr 1fr;}
 
-   
-  .optionsMenu{
-   top: 500px;
-   width: 100%;
-   left: auto;
-
-  }
- 
-  .city-content{
-   flex-direction: column-reverse;
-
-  }
-
-  .city-content:nth-child(2){
-   flex-direction: column;
-  }
-
-
-.city-info {
-   width: 900px;
-}
-
-
-.all-page-p {
-   padding: 2rem;
-}
-
-
-.footer-info { grid-template-columns: 1fr 1fr;}
-
-
-.border-none{
-   border: none;
-}
-
-.site-info{
-   flex-direction: column;
-   gap: 20px;
-   padding: 10px;
-}
-
-
-}
- 
-@media only screen and (max-width: 600px) {
-  
-   body{
-      margin: 0 ;
-      padding: 0;
+   .cards {
+      grid-template-columns: 1fr 1fr;
    }
+
+
+   .optionsMenu {
+      top: 500px;
+      left: auto;
+
+   }
+
+   .city-content {
+      flex-direction: column-reverse;
+
+   }
+
+   .city-content:nth-child(2) {
+      flex-direction: column;
+   }
+
+
+   .city-img {
+      margin: 0;
+   }
+
+   .city-info {
+      width: 900px;
+   }
+
 
    .all-page-p {
       padding: 2rem;
    }
 
 
-   .bgline{
+   .footer-info {
+      grid-template-columns: 1fr 1fr;
+   }
+
+
+   .border-none {
+      border: none;
+   }
+
+   .site-info { 
+      gap: 20px;
+      padding: 10px;
+   }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+
+
+   * {
+      margin: 0;
+      padding: 0;
+
+   }
+
+   .mobileImg {
+      display: contents;
+   }
+
+
+   .mobileImg>h1 {
+      top: 345px;
+      left: 50px;
+      color: var(--color-white);
+      font-size: 130px;
+      transition: transform 2s ease;
+
+   }
+
+   .mobileImg:hover h1 {
+      transform: translateY(-70px);
+   }
+
+   .mobileImg>p {
+      top: 523px;
+      left: 130px;
+      font-size: 23px;
+      font-family: cursive;
+      color: var(--color-white);
+      z-index: 1;
+   }
+
+   .banner-mobile img {
+      width: 100vh;
+      height: auto;
+   }
+
+   .mobile-mask img {
+      width: 100vh;
+      height: auto;
+      background-image: url(../img/body-bg.png);
+
+
+
+   }
+
+   .mobile-mask {
+      top: 213px;
+   }
+
+
+   .optionsMenu {
+      top: -800px;
+      flex-direction: column;
+      margin: 0 20px;
+
+   }
+
+   .optionsMenu form {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 10px;
+   }
+
+   .aboutUs {
+      grid-template-columns: 1fr;
+      gap: 30px;
+   }
+
+   .content {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .mobile-margin-top {
+      margin-top: 600px;
+   }
+
+
+   .bgline {
       background-image: none;
    }
 
-
-   .content{
-      width: 100%;
-   }
-  
-   .cards{
+   .cards {
       grid-template-columns: 1fr;
       gap: 50px;
    }
 
-   .city-content{
-      justify-content: center;
-      padding:0 ;
+   .city-content {
+      margin: 0;
    }
-  
-.city-info{
-   width: 400px;
-   margin: 0 10px;
-}
 
-   .discount-content{
+   .city-img {
+      width: 500px;
+      height: 300px;
+   }
+
+   .city-info {
+      width: 500px;
+      margin-bottom: 10px;
+
+   }
+
+   .city-info>h1 {
+      font-size: 30px;
+   }
+
+   .discount-content {
       flex-direction: column-reverse;
-      
+
    }
 
-   .discount-img{
+   .discount-img {
       width: 35%;
    }
 
-   .discount-info{
+   .discount-info {
       font-size: 15px;
       transform: translateY(140px);
    }
 
-   .discount-info>h1{
+   .discount-info>h1 {
       font-size: 35px;
    }
 
@@ -1037,22 +1119,22 @@ footer {
       font-size: 20px;
       top: -40px;
       right: 80px;
-     
-   
+
+
    }
 
 
-.discount-offer span:first-child {
-   font-size: 30px;
-}
+   .discount-offer span:first-child {
+      font-size: 30px;
+   }
 
-  
-   .footer-logo{
+
+   .footer-logo {
       width: 70%;
-      
+
    }
 
-   .categories{
+   .categories {
       grid-template-columns: 1fr 1fr;
    }
 }
