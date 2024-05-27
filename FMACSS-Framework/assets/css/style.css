@@ -58,6 +58,13 @@
    cursor: pointer;
 }
 
+.b-radius-15{
+   border-radius: 15px;
+}
+
+.overflow-h{
+   overflow: hidden;
+}
 
 .btn {
    width: 140px;
@@ -67,7 +74,6 @@
    border-radius: 20px;
    border: none;
    outline: none;
-   overflow: hidden;
 }
 
 .btn span {
@@ -285,9 +291,6 @@ svg:hover .icon {
 
 }
 
-.swiper-slide {
-   border-radius: 10px;
-}
 
 .swiper-slide img {
    object-fit: cover;
@@ -299,8 +302,6 @@ svg:hover .icon {
 }
 
 .card {
-   border-radius: 15px;
-   overflow: hidden;
    background-color: #fff;
    transition: transform 0.3s ease-in-out;
 }
@@ -311,7 +312,6 @@ svg:hover .icon {
 
 .card-img {
    height: 330px;
-   overflow: hidden;
 }
 
 .card-img img {
@@ -410,7 +410,6 @@ svg:hover .icon {
    width: var(--icon-size);
    height: auto;
    fill: var(--icon-secondary-color);
-   cursor: pointer;
    transition: 0.2s;
    transform-origin: top;
 }
@@ -542,14 +541,12 @@ svg:hover .icon {
 }
 
 
-
 .city-title>h1 {
    font-size: 45px;
 }
 
 
 .city-img {
-   border-radius: 15px;
    border: ridge;
    background-color: white;
    width: 650px;
@@ -558,7 +555,6 @@ svg:hover .icon {
 }
 
 .city-img img {
-   border-radius: 15px;
    height: 100%;
    width: 100%;
 
@@ -583,12 +579,10 @@ svg:hover .icon {
 .discount {
    border: 0.3px ridge rgb(103, 102, 102);
    margin: 70px 10px;
-   border-radius: 15px;
    height: auto;
 }
 
 .discount-content {
-   border-radius: 15px;
    border: 1px solid black;
    height: 560px;
    background-image: url(../img/discount-banner.png);
@@ -658,7 +652,6 @@ svg:hover .icon {
 }
 
 .scrollImg {
-   overflow: hidden;
    height: 300px;
 
 }
@@ -668,7 +661,6 @@ svg:hover .icon {
    top: 0;
    left: 0;
    height: 400px;
-   overflow: hidden;
    animation: scroll-x 30s linear infinite;
 }
 
@@ -679,7 +671,6 @@ svg:hover .icon {
 
 .zoom-img {
    width: 200px;
-   overflow: hidden;
    margin: 0 10px;
    border-radius: 10px;
 }
@@ -701,7 +692,7 @@ svg:hover .icon {
 
    100% {
       transform: translateX(-50%);
-      /* scroll to the middle of the second set of images */
+  
    }
 }
 
@@ -837,7 +828,6 @@ footer {
    height: 50px;
    border-radius: 5px;
    background-color: rgb(44, 44, 44);
-   overflow: hidden;
    transition-duration: 0.3s;
 }
 
