@@ -902,6 +902,10 @@ footer {
 
 @media only screen and (max-width: 1080px) {
 
+   .bgline {
+      background-image: none;
+   }
+
    .mask-layer {
       transform: translateY(-45px);
    }
@@ -928,6 +932,10 @@ footer {
 
    }
 
+   .aboutUs{
+      display: block;
+   }
+
    .city-content {
       flex-direction: column-reverse;
 
@@ -943,7 +951,8 @@ footer {
    }
 
    .city-info {
-      width: 900px;
+      width: 600px;
+      margin: 50px 0;
    }
 
 
@@ -1056,14 +1065,8 @@ footer {
    .mobile-margin-top {
       margin-top: 600px;
    }
-   .aboutCitys{
-      display: block;
-    
-   }
+ 
 
-   .bgline {
-      background-image: none;
-   }
 
    .cards {
       grid-template-columns: 1fr;
