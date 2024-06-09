@@ -5,12 +5,7 @@
 
 }
 
-
-
-/*variables*/
-
 :root {
-
    --color-pg: rgb(237, 107, 26);
    --color-white: rgb(255, 255, 255);
 
@@ -72,7 +67,7 @@
    width: 140px;
    height: 48px;
    background: linear-gradient(to top, #ec6911, #ef790b, #f46f23);
-   color: #fff;
+   color: var(--color-white);
    border-radius: 20px;
    border: none;
    outline: none;
@@ -214,8 +209,6 @@ svg:hover .icon {
    transform: scale(0.9);
 }
 
-
-/*main*/
 .welcome {
    height: 100vh;
 }
@@ -224,14 +217,13 @@ svg:hover .icon {
    display: none;
 }
 
-
 .mainBg img {
    height: auto;
 
 }
 
 .main-img>h1 {
-   top: 300px;
+   top: 310px;
    left: 330px;
    color: var(--color-white);
    font-size: 200px;
@@ -379,7 +371,7 @@ svg:hover .icon {
 
 .card-footer h4:hover {
    background-color: var(--color-pg);
-   color: white;
+   color: var(--color-white);
 
 }
 
@@ -571,7 +563,6 @@ svg:hover .icon {
 }
 
 .city-info>p {
-   font-size: 20px;
    line-height: 25px;
    letter-spacing: 0.5px;
 }
@@ -579,8 +570,8 @@ svg:hover .icon {
 
 .discount {
    border: 0.3px ridge rgb(103, 102, 102);
-   margin: 70px 10px;
    height: auto;
+  margin: 90px 0;
 }
 
 .discount-content {
@@ -590,7 +581,6 @@ svg:hover .icon {
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   padding: 10px;
 
 
 }
@@ -614,7 +604,6 @@ svg:hover .icon {
 }
 
 .discount-info h3 {
-   font-size: 20px;
    color: var(--color-pg);
    padding-top: 10px;
 }
@@ -622,7 +611,6 @@ svg:hover .icon {
 
 
 .discount-info p {
-   width: 80%;
    color: white;
    padding: 20px 0;
 
@@ -673,12 +661,11 @@ svg:hover .icon {
 .zoom-img {
    width: 200px;
    margin: 0 10px;
-   border-radius: 10px;
+  
 }
 
 .zoom-img img {
-   width: 100%;
-   transition: all .3s ease-in-out;
+   transition: all .5s ease-in-out;
 }
 
 .zoom-img img:hover {
@@ -729,10 +716,6 @@ footer {
 
 }
 
-.footer-logo {
-   width: 500px;
-
-}
 
 .site-info {
    grid-template-columns: auto 1fr;
@@ -741,7 +724,6 @@ footer {
 
 .categories {
    grid-template-columns: 1fr 1fr 1fr 1fr;
-   gap: 30px;
    font-size: 16px;
 
 }
@@ -884,10 +866,6 @@ footer {
 
 }
 
-.footer-end>div>p {
-   font-size: 20px;
-}
-
 
 @media only screen and (max-width: 1080px) {
 
@@ -1003,22 +981,7 @@ footer {
       z-index: 2;
    }
 
-   .banner-mobile img {
-      width: 100%;
-      height: auto;
-   }
-
-   .mobile-mask img {
-      width: 100%;
-      height: auto;
-     
-
-
-
-   }
-
    .mobile-mask {
-      width: 100%;
       top: 240px;
    }
 
@@ -1028,12 +991,10 @@ footer {
       flex-direction: column;
       left: 0;
 
-
    }
 
    .optionsMenu form {
       display: flex;
-      justify-content: center;
       flex-direction: column;
       margin: 10px;
    }
@@ -1056,7 +1017,6 @@ footer {
       margin-top: 600px;
    }
  
-
 
    .cards {
       grid-template-columns: 1fr;
@@ -1111,16 +1071,11 @@ footer {
 
    }
 
-
    .discount-offer span:first-child {
       font-size: 30px;
    }
 
 
-   .footer-logo {
-      width: 70%;
-
-   }
 
    .categories {
       grid-template-columns: 1fr 1fr;

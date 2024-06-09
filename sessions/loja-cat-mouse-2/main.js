@@ -106,7 +106,7 @@ if (ticTimer == 0) {
     mouseObj= 3000;
 
 
-    if(points >= 3){
+    if(points > 3){
         ctx.font = "30px Georgia";
         ctx.fillStyle = "white";
         ctx.fillText = ("You win", 220, 200);

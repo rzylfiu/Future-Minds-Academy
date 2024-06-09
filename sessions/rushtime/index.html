@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Season</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- The menu of seasons -->
+<nav id="seasons-menu">
+    <ul>
+      <li><a href="#" data-season="spring">Spring</a></li>
+      <li><a href="#" data-season="summer">Summer</a></li>
+      <li><a href="#" data-season="autumn">Autumn</a></li>
+      <li><a href="#" data-season="winter">Winter</a></li>
+    </ul>
+  </nav>
+  
+  <!-- The container to display the season image and title -->
+  <div id="season-display">
+    <h1 id="season-title"></h1>
+    <img id="season-image" src="" alt="">
+  </div>
+    <script>
+        // Get the menu and display containers
+const seasonsMenu = document.getElementById('seasons-menu');
+const seasonDisplay = document.getElementById('season-display');
+const seasonTitle = document.getElementById('season-title');
+const seasonImage = document.getElementById('season-image');
+
+// Add event listeners to the menu items
+seasonsMenu.addEventListener('click', (e) => {
+  if (e.target.tagName === 'A') {
+    const season = e.target.getAttribute('data-season');
+    displaySeason(season);
+  }
+});
+
+// Function to display the selected season
+function displaySeason(season) {
+  // Set the title and image based on the selected season
+  seasonTitle.textContent = season.charAt(0).toUpperCase() + season.slice(1);
+  seasonImage.src = `images/${season}.jpg`;
+  seasonImage.alt = season;
+}
+
+    </script>
+</body>
+</html>

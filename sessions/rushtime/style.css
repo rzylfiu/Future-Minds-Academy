@@ -1,0 +1,39 @@
+/* Style the menu */
+#seasons-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #seasons-menu li {
+    margin-right: 20px;
+  }
+  
+  #seasons-menu a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #seasons-menu a:hover {
+    color: #666;
+  }
+  
+  /* Style the season display container */
+  #season-display {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #season-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  #season-image {
+    width: 50%;
+    height: auto;
+    margin: 20px auto;
+  }
