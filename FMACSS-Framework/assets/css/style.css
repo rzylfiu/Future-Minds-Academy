@@ -948,11 +948,6 @@ footer {
 @media only screen and (max-width: 600px) {
 
 
-   * {
-      margin: 0;
-      padding: 0;
-
-   }
 
    .mobileImg {
       display: contents;
@@ -988,14 +983,12 @@ footer {
 
    .optionsMenu {
       top: -600px;
-      flex-direction: column;
       left: 0;
 
    }
 
    .optionsMenu form {
       display: flex;
-      flex-direction: column;
       margin: 10px;
    }
    
@@ -1006,7 +999,7 @@ footer {
 
    .content {
       display: flex;
-      flex-direction: column;
+   
    }
 
    .swiper{
