@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowels and Consonants</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            margin-top:20px ;
+        }
+        #letter-input{
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            font-size: 20px;
+        }
+        #btn{
+           width: 100px;
+           height: 30px;
+           font-size: 18px;
+        }
+
+    </style>
+</head>
+
+<body>  
+    <input id="letter-input" type="text" placeholder="Enter a letter or key">
+    <button id="btn">Check</button>
+    
+    <script>
+      const inputField = document.getElementById('letter-input');
+      const btn = document.getElementById('btn');
+    
+      btn.addEventListener('click', () => {
+        let letter = inputField.value.trim();
+        let vowels = 'aeiouy';
+       
+    
+        if (letter.length !== 1) {
+          console.log('Please enter only one character');
+        } else {
+          letter = letter.toLowerCase();
+    
+          if (letter.match(/[a-z]/)) { 
+            if (vowels.includes(letter)) {
+              console.log('The letter you typed is a vowel!');
+            } else {
+              console.log('The letter you typed is a consonant!');
+            }
+          } else if (letter.match(/[0-9]/)) { 
+            console.log('The key you typed is a number!');
+          } else {
+            console.log('The key you typed is a symbol!');
+          }
+        }
+     
+      });
+    </script>
+
+</body>
+
+</html>

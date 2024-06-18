@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The first Native API</title>
+</head>
+
+<body>
+
+    <script> 
+
+        let searchQuery = prompt("What do you want to search for?");
+        let searchEngine = prompt("Do you want to search on Google or YouTube?");
+        if (searchEngine.toLowerCase() === "google") {
+            let url = `https://www.google.com/search?q=${searchQuery}`;
+            location.href = url;
+        } else if (searchEngine.toLowerCase() === "youtube") {
+            let url = `https://www.youtube.com/results?search_query=${searchQuery}`;
+            location.href = url;
+        } else {
+            alert("Invalid search engine. Please try again.");
+        }
+    </script>
+
+</body>
+
+</html>
