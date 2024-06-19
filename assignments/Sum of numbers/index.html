@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Numbers</title>
+</head>
+<body>
+  <h1>Sum of  Numbers</h1>
+  <p>Enter positive numbers, one per line. Enter 0 when you are finished.</p>
+  <h2></h2>
+  <input id="num-input" type="number" />
+  <button id="submit-btn">Enter</button>
+  <div id="result"></div>
+
+  <script>
+    let sum = 0;
+
+    document.getElementById("submit-btn").addEventListener("click", () => {
+      const userInput = document.getElementById("num-input").value;
+      const num = parseFloat(userInput);
+
+      if (num === 0) {
+        document.getElementById("result").innerHTML = `The sum of the numbers you wrote is equal to ${sum}.`;
+      } else if (num > 0) {
+        sum += num;
+        document.getElementById("num-input").value = "";
+      } else {
+        alert("Please enter a positive number!");
+      }
+    });
+  </script>
+</body>
+</html>
