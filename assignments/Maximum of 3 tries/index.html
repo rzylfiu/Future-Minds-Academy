@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let password = '12341234';
+        let tries = 3;
+        let userInput;
+
+        do {
+            if (tries === 3) {
+                userInput = prompt(`Enter your password. You have ${tries} tries left.`);
+            } else if (tries === 2) {
+                userInput = prompt(`Incorrect password. You have ${tries} tries left.`);
+            } else {
+                userInput = prompt(`Incorrect password. You have ${tries} try left.`);
+            }
+
+            tries--;
+        } while (userInput !== password && tries > 0);
+
+        if (userInput === password) {
+            alert('Welcome!');
+        } else {
+            alert('You cannot try anymore.');
+        }
+    </script>
+</body>
+
+</html>

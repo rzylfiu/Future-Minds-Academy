@@ -1,83 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Numbers from 1 to n</title>
-    <style>
-        body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0; /* light gray background */
-}
-
-h1 {
-  color: #333; /* dark gray text */
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-input[type="number"] {
-  width: 50px;
-  height: 30px;
-  font-size: 18px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button {
-  background-color: #4CAF50; /* green button */
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #3e8e41; /* darker green on hover */
-}
-
-#output {
-  margin-top: 20px;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background-color: #fff;
-  font-size: 18px;
-}
-
-#output.invalid {
-  color: red;
-  border-color: red;
-}
-    </style>
+    <title>Document</title>
 </head>
+
 <body>
-  <h1>Print Numbers</h1>
-  <input id="num" type="number" min="1" max="100" />
-  <button onclick="printNumbers()">Print Numbers</button>
-  <div id="output"></div>
 
-  <script>
-    function printNumbers() {
-      let num = document.getElementById("num").value;
-      if (num < 1 || num > 100) {
-        document.getElementById("output").innerHTML = "Invalid input. Please enter a number between 1 and 100.";
-        return;
-      }
+    <script>
+        const n = parseInt(prompt("Enter a positive integer from 1 to 100: "));
 
-      let str = '';
-      for (let i = 1; i <= num; i++) {
-        console.log(i);
-        str += i;
-        if (i < num) {
-          str += ', ';
+        for (let i = 1; i <= n; i++) {
+            console.log(i);
         }
-      }
 
-      document.getElementById("output").innerHTML = str;
-    }
-  </script>
+
+        let str = "";
+        for (let i = 1; i <= n; i++) {
+            str += i + " ";
+        }
+        console.log(str.trim());
+
+        for (let i = 1; i <= n; i++) {
+            str += i;
+            if (i < n) {
+                str += ", ";
+            }
+        }
+        console.log(str);
+    </script>
 </body>
+
 </html>

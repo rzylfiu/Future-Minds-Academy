@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess until correct</title>
+</head>
+
+<body>
+    <script>
+        function guessNumberGame() {
+            const randomNumber = Math.floor(Math.random() * 6) + 1; // Random number between 1 and 6
+            let tries = 0;
+            let guessedCorrectly = false;
+
+            do {
+                const userGuess = parseInt(prompt("Guess a number between 1 and 6:"));
+
+                if (userGuess === randomNumber) {
+                    tries++;
+                    guessedCorrectly = true;
+                } else {
+                    alert("Wrong guess. Try again!");
+                    tries++;
+                }
+            } while (!guessedCorrectly);
+
+            if (tries === 1) {
+                alert(`Congratulations, you guessed the correct number in 1 try!`);
+            } else {
+                alert(`Congratulations, you guessed the correct number in ${tries} tries!`);
+            }
+        }
+
+        // Start the game
+        guessNumberGame();
+
+    </script>
+</body>
+
+</html>

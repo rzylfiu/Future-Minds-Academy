@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let startNum = parseInt(prompt("Enter a positive integer to start the Hailstone sequence: "));
+
+        console.log(`Hailstone sequence starting from ${startNum}:`);
+
+        let currentNum = startNum;
+        while (currentNum !== 1) {
+            console.log(currentNum);
+            if (currentNum % 2 === 0) {
+                currentNum = currentNum / 2;
+            } else {
+                currentNum = currentNum * 3 + 1;
+            }
+        }
+
+        console.log(currentNum); // print the final 1
+        console.log("Sequence ended.");
+    </script>
+</body>
+
+</html>
