@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Expressions</title>
+</head>
+<body>
+    <script>
+ 
+let printHelloWorld = function() {
+    for (let i = 0; i < 10; i++) {
+        console.log("Hello World");
+    }
+};
+
+let printString = function(s) {
+    console.log(s);
+};
+
+let kmToMiles = function(km) {
+    let miles = km * 0.621371;
+    return miles;
+};
+
+let circleArea = function(radius) {
+    let area = Math.PI * radius ** 2;
+    return area;
+};
+
+let welcomeMessage = function(name, surname) {
+    return `Welcome, ${name} ${surname}`;
+};
+
+let isWorkingCitizen = function(age) {
+    return age >= 18 && age < 65;
+};
+
+let isEven = function(n) {
+    return n % 2 === 0;
+};
+
+let addNumbers = (a, b) => a + b;
+
+
+printHelloWorld();
+
+printString("Hello, this is a test string");
+
+let miles = kmToMiles(10);
+console.log(`10 kilometers is equal to ${miles} miles`);
+
+let area = circleArea(5);
+console.log(`The area of a circle with radius 5 is ${area}`);
+
+let message = welcomeMessage("John", "Doe");
+console.log(message);
+
+let isCitizen = isWorkingCitizen(30);
+console.log(`Is the 30-year-old a working citizen? ${isCitizen}`);
+
+let isNumberEven = isEven(10);
+console.log(`Is the number 10 even? ${isNumberEven}`);
+
+let sum = addNumbers(5, 7);
+console.log(`The sum of 5 and 7 is ${sum}`);
+    </script>
+</body>
+</html>

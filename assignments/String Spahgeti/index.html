@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Spaghetii</title>
+</head>
+<body>
+    <h1>String  Spaghetii</h1>
+    <script>
+        
+        let str = '     hello, dolly! ';
+        let firstLetter = str.trim().substring(0, 1).toUpperCase();
+        document.write("The first letter of the first word is " + firstLetter + "<br><br>");
+
+        
+        let time = '05:36 PM';
+        var parts = time.split(':');
+        let hours = parseInt(parts[0]);
+        let minutes = parseInt(parts[1]);
+        let period = parts[1].substring(2);
+        document.write("Hours: " + hours + ", Minutes: " + minutes + ", Period: " + period + "<br><br>");
+
+        
+        let temp = 'New York, 15°C';
+        var parts = temp.split(', ');
+        let city = parts[0];
+        let temperature = parseFloat(parts[1].substring(0, parts[1].length - 1)); 
+        document.write("City: " + city + ", Temperature: " + temperature + "<br><br>");
+
+        
+        temp = 'Ottawa, -4°C';
+        parts = temp.split(', ');
+        city = parts[0];
+        temperature = parseFloat(parts[1].substring(0, parts[1].length - 1));
+        document.write("City: " + city + ", Temperature: " + temperature + "<br><br>");
+
+        temp = 'Prishtina, 50°F';
+        parts = temp.split(', ');
+        city = parts[0];
+        temperature = parseFloat(parts[1].substring(0, parts[1].length - 1));
+        document.write("City: " + city + ", Temperature: " + temperature + "<br><br>");
+    </script>
+</body>
+</html>
