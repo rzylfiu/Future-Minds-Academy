@@ -1,105 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colest Answer Game</title>
-    <style>
-        body {
-            background-color: #f0f0f0;
-            font-family: sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-        }
+<title>Number Guessing Game</title>
+<style>
+body {
+  background-color: #f0f0f0;
+  font-family: sans-serif;
+}
 
-        .container {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+.container {
+  width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-        .result {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-        .player {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
-            border-radius: 5px;
-            font-weight: bold;
-        }
+.player-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 2em;
+}
 
-        .player-one {
-            background-color: #4CAF50; /* Green */
-            color: white;
-        }
+.player-box.player-one {
+  background-color: #4CAF50;
+  color: white;
+}
 
-        .player-two {
-            background-color: #f44336; /* Red */
-            color: white;
-        }
+.player-box.player-two {
+  background-color: #f44336;
+  color: white;
+}
 
-        .tie {
-            background-color: orange; /* Orange */
-            color: white;
-        }
-    </style>
+.result-box {
+  text-align: center;
+  font-size: 2em;
+}
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="result">The correct answer is:</div>
-        <div class="player player-one">Player One: 6</div>
-        <div class="player player-two">Player Two: 19</div>
-    </div>
-    <script>
-        let answer = Math.floor(Math.random()* 20) + 1;
 
-        let playerOne = parseInt (prompt('Player One:'));
-        let playerTwo = parseInt (prompt('Player Two: '));
+<div class="container">
+  <h1>Number Guessing Game</h1>
+  <div class="player-box player-one" id="player-one">
+    Player One
+    <br>
+    6
+  </div>
+  <div class="player-box player-two" id="player-two">
+    Player Two
+    <br>
+    19
+  </div>
+  <div class="result-box" id="result">
+    The correct answer is 7
+  </div>
+</div>
 
-        if(isNaN(playerOne)  || isNaN(playerTwo))
-        throw new Error('Please write only numbers!');
-    
-        if((playerOne < 0 || playerOne > 20)
-        (playerTwo < 0 || playerTwo > 20)){
-    throw new Error('Only select number between 0-20');
-}
+<script>
+  
+  function generateRandomNumber() {
+    return Math.floor(Math.random() * 20) + 1; 
+  }
 
-let playerOneDistance = Math.abs(answer - playerOne);
-let playerTwoDistance = Math.abs(answer - playerTwo);
 
-let winner;
-if(playerOneDistance < playerTwoDistance)
-winner = 'Player One';
+  function playGame() {
+    const randomNumber = generateRandomNumber();
+    const playerOneNumber = generateRandomNumber();
+    const playerTwoNumber = generateRandomNumber();
 
-else if (playerTwoDistance < playerOneDistance) 
-winner = 'Player Two';
+    const playerOneBox = document.getElementById("player-one");
+    const playerTwoBox = document.getElementById("player-two");
+    const resultBox = document.getElementById("result");
 
-else 
-winner = 'Tie';
+    playerOneBox.innerHTML = `Player One<br>${playerOneNumber}`;
+    playerTwoBox.innerHTML = `Player Two<br>${playerTwoNumber}`;
 
-// Update the UI
-document.querySelector('.result').innerHTML = `The correct answer is: ${answer}`;
-document.querySelector('.player-one').innerHTML = `Player One: ${playerOne}`;
-document.querySelector('.player-two').innerHTML = `Player Two: ${playerTwo}`;
+    if (playerOneNumber === randomNumber) {
+      playerOneBox.style.backgroundColor = "#4CAF50";
+      resultBox.innerHTML = `The correct answer is ${randomNumber}<br>Player One wins!`;
+    } else if (playerTwoNumber === randomNumber) {
+      playerTwoBox.style.backgroundColor = "#f44336";
+      resultBox.innerHTML = `The correct answer is ${randomNumber}<br>Player Two wins!`;
+    } else if (playerOneNumber === playerTwoNumber) {
+      playerOneBox.style.backgroundColor = "#FFA500";
+      playerTwoBox.style.backgroundColor = "#FFA500";
+      resultBox.innerHTML = `The correct answer is ${randomNumber}<br>It's a tie!`;
+    } else {
+      resultBox.innerHTML = `The correct answer is ${randomNumber}<br>No one guessed correctly.`;
+    }
+  }
 
-// Determine the winner and update the UI accordingly
-if (winner === 'Player One') {
-    document.querySelector('.player-one').classList.add('winner');
-} else if (winner === 'Player Two') {
-    document.querySelector('.player-two').classList.add('winner');
-} else {
-    document.querySelector('.player-one').classList.add('tie');
-    document.querySelector('.player-two').classList.add('tie');
-}
+  playGame();
+</script>
 
-    </script>
 </body>
 </html>
