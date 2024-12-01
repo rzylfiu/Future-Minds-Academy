@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maca dhe miu</title>
+    <style>
+        canvas{
+            background-color: aqua;
+        }
+
+        body{
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+
+        #timerDV {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+
+        }
+        #pointsDV {
+            position: absolute;
+            top: 20px;
+            left: 720px;
+
+        }
+
+        #msg{
+            position: absolute;
+            top: 20px;
+            left: 320px;
+            font-weight: bold;
+            
+        }
+
+        #restartBTN{
+            position: absolute;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius:10px;
+            font-size: 18px;
+            visibility: hidden;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="timerDV">Timer: 15 </div>
+    <div id="msg"></div>
+    <div id="pointsDV">Points: 0 </div>
+
+    <canvas id="canvas" width="800" height="500"> </canvas>
+    <div>
+    <button id="restartBTN">Restart</button></div>
+
+
+    <script src="main.js">
+    </script>
+</body>
+
+</html>

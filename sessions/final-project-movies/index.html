@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+        .movieModal {
+            display: none;
+            width: 400px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            position: absolute;
+            top: 20%;
+            left: 40%;
+            z-index: 1;
+            background-color: white;
+        }
+
+        .movieModal header {
+            padding: 20px;
+            border-bottom: 2px solid gray;
+        }
+        .movieModal main {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+
+        input { 
+            width: 80%;
+            padding: 10px;
+            font-size: 18px;
+        }
+        
+        .movieModal main {
+            width: 400px;
+            padding: 20px;
+        }
+
+        .movieModal select {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+
+        .movieModal footer {
+            padding: 20px;
+            border-top: 2px solid gray;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+        .wrapper {
+            width: 600px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        #confirmation-container {
+            
+         background-color: white;
+         border-radius: 8px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         width: 400px;
+         padding: 40px;
+         text-align: center;
+         display: none;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         position: absolute; /* Use fixed position for fixed placement on the screen */
+    top: 50%; /* Move it halfway down the screen */
+    left: 50%; /* Move it halfway across the screen */
+    transform: translate(-50%, -50%); /* Adjust to truly center it */
+    z-index: 9999; 
+      }
+
+      /* Style for the confirmation message */
+      #confirmation-message {
+         font-size: 18px;
+         margin-bottom: 20px;
+         color: #333;
+      }
+
+      /* Style for the buttons container */
+      #confirmation-buttons {
+         display: flex;
+         gap: 10px;
+      }
+
+      /* Style for the Yes button */
+      #confirm-yes {
+         background-color: #4CAF50;
+         color: white;
+         border: none;
+         padding: 10px 20px;
+         font-size: 16px;
+         border-radius: 5px;
+         cursor: pointer;
+         transition: background-color 0.3s ease;
+      }
+
+      #confirm-yes:hover {
+         background-color: #45a049;
+      }
+
+      /* Style for the No button */
+      #confirm-no {
+         background-color: #f44336;
+         color: white;
+         border: none;
+         padding: 10px 20px;
+         font-size: 16px;
+         border-radius: 5px;
+         cursor: pointer;
+         transition: background-color 0.3s ease;
+      }
+
+      #confirm-no:hover {
+         background-color: #e53935;
+      }
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div>
+            <button id="btnAddMovie">Add Movie</button>
+        </div>
+        <table border="1" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Movie Name</th>
+                    <th>Photo</th>
+                    <th>Reviews</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+    
+            <tbody id="allMovies">
+               
+            </tbody>
+        </table>
+    </div>
+    
+
+    <div class="movieModal">
+        <header>
+            <h2 id="movieModalTitle">Add Movie</h2>
+        </header>
+        <main>
+            <div><input type="number" placeholder="Year" id="movieYear"></div>
+            <div><input type="text" placeholder="Movie Title" id="movieName"></div>
+            <div>
+                <select name="" id="movieImage">
+                    <option value="Inside_out_2.jpeg">
+                        Thumb 1
+                    </option>
+                    <option value="the-tast-othings.jpeg">
+                        Thumb 2
+                    </option>
+                </select>
+            </div>
+            <div><input type="number" placeholder="Reviews" id="movieRewies"></div>
+             
+        </main>
+        <footer>
+            <button id="btnCancel">Cancel</button>
+            <button id="btnSubmit">Submit</button>
+        </footer>
+        
+    </div>
+    <div id="confirmation-container">
+        <div id="confirmation-header">
+           <h2 id="confirmation-message">Are you sure?</h2>
+        </div>
+        <div id="confirmation-buttons">
+           <button id="confirm-yes">Yes</button>
+           <button id="confirm-no">No</button>
+        </div>
+     </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

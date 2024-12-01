@@ -1,0 +1,38 @@
+.offline-popup, .online-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1000;
+    display: none; 
+}
+
+.offline-popup {
+    background-color: #ff4e4e;
+}
+
+
+.online-popup {
+    background-color: #4CAF50; /* Green */
+}
+
+
+.popup-show {
+    display: block;
+    animation: slideDown 0.3s ease-in-out;
+}
+
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

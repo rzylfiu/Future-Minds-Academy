@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Dimensions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Room Dimensions</h1>
+        <div id="inputs">
+            <p>Enter the width and length of your room (in meters):</p>
+            <input type="number" id="width" placeholder="Width (m)" step="0.1">
+            <input type="number" id="length" placeholder="Length (m)" step="0.1">
+            <button onclick="drawRoom()">Draw Room</button>
+        </div>
+
+        <div class="room" id="roomContainer"></div>
+
+        <div class="room-info" id="roomInfo"></div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

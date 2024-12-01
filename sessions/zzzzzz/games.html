@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Categories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-title">
+                <h1>Game Categories</h1>
+            </div>
+        </header>
+
+        <div class="row">
+            <nav class="col-1">
+                <div class="categories">
+                    <h3>Game Categories</h3>
+                    <select id="gameCategory" onchange="gamesCategory(this.value)">
+                      
+                    </select>
+                </div>
+
+                <div class="game-list">
+                    <ul id="gameList" >
+                        <!-- Game list will appear here based on selection -->
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-4">
+                <div class="game-details">
+                  
+                </div>
+                <button id="removeBtn" onclick="removeGameDetails()">Remove</button>
+            </main>
+        </div>
+    </div>
+
+    <script src="games.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

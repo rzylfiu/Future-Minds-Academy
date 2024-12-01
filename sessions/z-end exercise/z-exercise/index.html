@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        #addMovieBtn {
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #addMovieBtn:hover {
+            background-color: #4cae4c;
+        }
+        .movie-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+        }
+        .movie-item {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .movie-item img {
+            width: 50px;
+            height: 75px;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+        .movie-info {
+            flex: 1;
+        }
+        .movie-actions button {
+            margin-left: 5px;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .popup-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+        }
+        .popup input, .popup textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .popup button {
+            width: 100%;
+        }
+        .popup-close {
+            background-color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Movie List</h1>
+        <button id="addMovieBtn">Add Movie</button>
+        <ul class="movie-list" id="movieList">
+        
+        </ul>
+    </div>
+
+   
+    <div id="moviePopup" class="popup">
+        <div class="popup-content">
+            <h3 id="popupTitle">Add Movie</h3>
+            <input type="number" id="movieYear" placeholder="Year" required>
+            <input type="text" id="movieName" placeholder="Movie Name" required>
+            <select name="" id="movieImage">
+                <option value="Inside_out_2.jpeg">
+                    Thumb 1
+                </option>
+                <option value="the-tast-othings.jpeg">
+                    Thumb 2
+                </option>
+            </select>
+            <textarea id="movieReviews" placeholder="Reviews"></textarea>
+            <button id="saveMovieBtn">Save Movie</button>
+            <button class="popup-close" id="closePopupBtn">Close</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

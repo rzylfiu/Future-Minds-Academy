@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+    background-color: #f0f0f0; /* Light background */
+}
+
+.circle {
+    position: fixed;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    animation: float 3s ease-in-out infinite; /* Add floating animation */
+    transition: all 0.3s ease; /* Optional smooth transition */
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0); /* Start at original position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move up */
+    }
+    100% {
+        transform: translateY(0); /* Return to original position */
+    }
+}
